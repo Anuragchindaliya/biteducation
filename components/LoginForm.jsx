@@ -37,7 +37,7 @@ const LoginForm = ({ setUserLogin, toast }) => {
                         </div>
                         <div className="col-md-12 form-group">
                             <label htmlFor="pword">Password</label>
-                            <input type="text" className="form-control form-control-lg" value={crendetials.password} onChange={(e) => setCrendentials({ ...crendetials, password: e.target.value })} />
+                            <input type="password" className="form-control form-control-lg" value={crendetials.password} onChange={(e) => setCrendentials({ ...crendetials, password: e.target.value })} />
                         </div>
                     </div>
                     <div className="row">

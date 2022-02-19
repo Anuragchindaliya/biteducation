@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const Dashboard = ({ toast }) => {
 
     const [state, setState] = useState({ sr_no: "", name: "", father_name: "", adm_no: "", cert_file: [] })
+    const [certificates, setCertificates] = useState([]);
     const handleSubmit = (e) => {
         e.preventDefault();
         const formData = new FormData();
@@ -17,18 +18,29 @@ const Dashboard = ({ toast }) => {
             .then((result) => {
                 if (result.status === "success") {
                     setState({ sr_no: "", name: "", father_name: "", adm_no: "", cert_file: [] })
-                    console.log("Date uploaded");
                     toast("certificate uploaded")
+                    fetchCertificate();
                 } else {
                     toast("Error in uploading")
-                    console.log("error in uploading")
+
                 }
             });
     }
+    const fetchCertificate = () => {
+        const token = localStorage.getItem("token");
+        fetch(`http://localhost/bitapi/api/certificates?token=${token}`).then((res) => res.json()).then((result) => {
+            if (result.status === "success") {
+                setCertificates(result.data)
+            }
+        })
+    }
+    useEffect(() => {
+        fetchCertificate()
+    }, [])
 
     return (
         <div className="container">
-            <div className="row justify-content-center">
+            <div className="row justify-content-center mb-5">
                 <form className="col-md-5" onSubmit={handleSubmit}>
                     <div className="row">
                         <div className="col-md-12 form-group">
@@ -58,6 +70,35 @@ const Dashboard = ({ toast }) => {
                         </div>
                     </div>
                 </form>
+            </div>
+            <div className="row">
+                <table className="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Father name</th>
+                            <th scope="col">Serial No.</th>
+                            <th scope="col">Admission No.</th>
+                            <th scope="col">Certificate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {certificates.map((crt, i) => (
+                            <tr key={crt.id}>
+                                <th scope="row">{i + 1}</th>
+                                <td>{crt.name}</td>
+                                <td>{crt.father_name}</td>
+                                <td>{crt.sr_no}</td>
+                                <td>{crt.adm_no}</td>
+                                <td><a target="_blank" download="BitEducation-certificate" href={"http://localhost/bitapi/uploads/certificates/" + crt.cert_path} rel="noreferrer">Download</a></td>
+
+                            </tr>
+                        ))}
+
+
+                    </tbody>
+                </table>
             </div>
         </div>
     )

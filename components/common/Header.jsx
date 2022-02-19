@@ -58,6 +58,9 @@ const Header = () => {
                   <li>
                     <a href="contact.html" className="nav-link text-left">Contact</a>
                   </li>
+                  <li>
+                    <Link href="/downloadCertificate" className="nav-link text-left">Download Certificate</Link>
+                  </li>
                 </ul>
               </nav>
             </div>
