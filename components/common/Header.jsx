@@ -32,9 +32,11 @@ const Header = () => {
         <div className="container">
           <div className="d-flex align-items-center">
             <div className="site-logo">
-              <a href="index.html" className="d-block">
-                <Image src="/assets/images/logo.jpg" alt="Image" className="img-fluid" width="100px" height="30px" />
-              </a>
+              <Link href="/" className="d-block">
+                <a>
+                  <Image src="/assets/images/logo.jpg" alt="Image" className="img-fluid" width="100px" height="30px" />
+                </a>
+              </Link>
             </div>
             <div className="mr-auto">
               <nav className="site-navigation position-relative text-right" role="navigation">
@@ -42,24 +44,18 @@ const Header = () => {
                   <li className="active">
                     <Link href="/" className="nav-link text-left">Home</Link>
                   </li>
-                  <li className="has-children">
-                    <a href="about.html" className="nav-link text-left">About Us</a>
-                    <ul className="dropdown">
-                      <li><a href="teachers.html">Our Teachers</a></li>
-                      <li><a href="about.html">Our School</a></li>
-                    </ul>
-                  </li>
                   <li>
-                    <a href="admissions.html" className="nav-link text-left">Admissions</a>
+                    <Link href="/about" className="nav-link text-left">About Us</Link>
                   </li>
+
                   <li>
-                    <a href="courses.html" className="nav-link text-left">Courses</a>
-                  </li>
-                  <li>
-                    <a href="contact.html" className="nav-link text-left">Contact</a>
+                    <Link href="/courses" className="nav-link text-left">Courses</Link>
                   </li>
                   <li>
                     <Link href="/downloadCertificate" className="nav-link text-left">Download Certificate</Link>
+                  </li>
+                  <li>
+                    <Link href="/contact" className="nav-link text-left">Contact</Link>
                   </li>
                 </ul>
               </nav>
