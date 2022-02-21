@@ -1,18 +1,37 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import NavLink from './NavLink'
+import MobileMenu from './MobileMenu'
 
 const Header = () => {
+  // const [isMenuActive, setMenuActive] = useState(false)
+  const handleMenu = () => {
+    const body = document.querySelector("body")
+    if (body.classList.contains("offcanvas-menu")) {
+      body.classList.remove("offcanvas-menu");
+    } else {
+      body.classList.add("offcanvas-menu");
+    }
+  }
+
   return (
     <div>
       <div className="site-mobile-menu site-navbar-target">
         <div className="site-mobile-menu-header">
-          <div className="site-mobile-menu-close mt-3">
+          <div className="site-mobile-menu-close mt-3" onClick={handleMenu}>
             <span className="icon-close2 js-menu-toggle" />
           </div>
         </div>
-        <div className="site-mobile-menu-body" />
+        <div className="site-mobile-menu-body">
+          <ul className="site-nav-wrap">
+            <NavLink href={"/"} exact >Home</NavLink>
+            <NavLink href={"/about"} exact >About Us</NavLink>
+            <NavLink href={"/courses"} exact >Courses</NavLink>
+            <NavLink href={"/downloadCertificate"} exact >Download Certificate</NavLink>
+            <NavLink href={"/contact"} exact >Contact</NavLink>
+          </ul>
+        </div>
       </div>
       <div className="py-2 bg-light">
         <div className="container">
@@ -29,7 +48,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <header className="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+      <header className="site-navbar py-4 js-sticky-header site-navbar-target sticky-wrapper" role="banner">
         <div className="container">
           <div className="d-flex align-items-center">
             <div className="site-logo">
@@ -56,7 +75,7 @@ const Header = () => {
                 <a href="#"><span className="icon-facebook" /></a>
                 <a href="#"><span className="icon-twitter" /></a>
                 <a href="#"><span className="icon-linkedin" /></a>
-                <a href="#" className="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span className="icon-menu h3" /></a>
+                <a onClick={handleMenu} href="#" className="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span className="icon-menu h3" /></a>
               </div>
             </div>
           </div>

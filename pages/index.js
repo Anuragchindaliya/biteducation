@@ -180,7 +180,7 @@ export default function Home() {
       <div className="site-section">
         <div className="container">
           <div className="row mb-5 justify-content-center text-center">
-            <div className="col-lg-6 mb-5">
+            <div className="col-lg-6 mt-5">
               <h2 className="section-title-underline mb-3">
                 <span>Popular Courses</span>
               </h2>

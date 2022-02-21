@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Banner = () => {
@@ -10,14 +11,15 @@ const Banner = () => {
                 </div>
                 <div className="col-lg-6">
                     <h1 className="section-title-underline mb-5"><span>You only have know one thing
-                       
+
                     </span></h1>
                     <p className="lead">  You can learn anything DICS COMPUTER EDUCATION</p>
                     <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <a className="btn btn-primary fw-500 me-2" href="#!">
-                            Get Started
-                            <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-arrow-right ms-2"><line x1={5} y1={12} x2={19} y2={12} /><polyline points="12 5 19 12 12 19" /></svg>
-                        </a>
+                        <Link href="/courses">
+                            <a className="btn btn-primary fw-500 me-2">Get Started
+                                <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-arrow-right ms-2"><line x1={5} y1={12} x2={19} y2={12} /><polyline points="12 5 19 12 12 19" /></svg>
+                            </a>
+                        </Link>
                         <a className="btn btn-link fw-500" href="#!">Learn More</a>
                     </div>
                 </div>
