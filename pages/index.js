@@ -151,22 +151,25 @@ export default function Home() {
             </div>
             <div className="col-lg-8">
               <p className="lead">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-                nesciunt quaerat ad reiciendis perferendis voluptate fugiat sunt
-                fuga error totam.
+                DICS Computer Education is an Accredited By Nielit Under MCIT
+                (Ministry OF Communication and Information Technology) Govt. Of
+                India. DICS has been established with a primary objective to
+                enhance the skills of the youth of India at Affordable Fee to
+                meet the growing demands of modern industrialization.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatibus assumenda omnis tempora ullam alias amet eveniet
-                voluptas, incidunt quasi aut officiis porro ad, expedita saepe
-                necessitatibus rem debitis architecto dolore? Nam omnis sapiente
-                placeat blanditiis voluptas dignissimos, itaque fugit a
-                laudantium adipisci dolorem enim ipsum cum molestias? Quod quae
-                molestias modi fugiat quisquam. Eligendi recusandae officiis
-                debitis quas beatae aliquam?
+                Even though the central and state Governments have made
+                considerable effort to enhance the Skill of the Youth, there
+                Continues to be a huge gap between the demand and supply of
+                Skilled Workforce. This is magnified by the fact that with a
+                population of over a billion people and majority in the average
+                age of 25 years, nearly 300 million are underemployed or
+                unemployed. On the other side industry is in acute shortage of
+                skilled labor. This clearly highlights that most of our
+                population is under skilled and therefore unemployable.
               </p>
               <p>
-                <a href="#">Read more</a>
+                <Link href="/about">Read more</Link>
               </p>
             </div>
           </div>

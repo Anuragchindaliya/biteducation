@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
+import NavLink from './NavLink'
 
 const Header = () => {
   return (
@@ -32,6 +33,7 @@ const Header = () => {
         <div className="container">
           <div className="d-flex align-items-center">
             <div className="site-logo">
+
               <Link href="/" className="d-block">
                 <a>
                   <Image src="/assets/images/logo.jpg" alt="Image" className="img-fluid" width="100px" height="30px" />
@@ -41,22 +43,11 @@ const Header = () => {
             <div className="mr-auto">
               <nav className="site-navigation position-relative text-right" role="navigation">
                 <ul className="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                  <li className="active">
-                    <Link href="/" className="nav-link text-left">Home</Link>
-                  </li>
-                  <li>
-                    <Link href="/about" className="nav-link text-left">About Us</Link>
-                  </li>
-
-                  <li>
-                    <Link href="/courses" className="nav-link text-left">Courses</Link>
-                  </li>
-                  <li>
-                    <Link href="/downloadCertificate" className="nav-link text-left">Download Certificate</Link>
-                  </li>
-                  <li>
-                    <Link href="/contact" className="nav-link text-left">Contact</Link>
-                  </li>
+                  <NavLink href={"/"} exact >Home</NavLink>
+                  <NavLink href={"/about"} exact >About Us</NavLink>
+                  <NavLink href={"/courses"} exact >Courses</NavLink>
+                  <NavLink href={"/downloadCertificate"} exact >Download Certificate</NavLink>
+                  <NavLink href={"/contact"} exact >Contact</NavLink>
                 </ul>
               </nav>
             </div>
