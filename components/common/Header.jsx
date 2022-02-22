@@ -48,6 +48,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {/* site-navbar py-4 js-sticky-header site-navbar-target shrink */}
       <header className="site-navbar py-4 js-sticky-header site-navbar-target sticky-wrapper" role="banner">
         <div className="container">
           <div className="d-flex align-items-center">

@@ -47,6 +47,6 @@
 
 .embed-responsive-1by1 {
   &::before {
-    padding-top: percentage(1 / 1);
+    padding-top: 100%;
   }
 }

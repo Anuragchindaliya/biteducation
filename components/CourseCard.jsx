@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const CourseCard = ({ course }) => {
@@ -5,7 +6,12 @@ const CourseCard = ({ course }) => {
         <div className="col-lg-4 col-md-6 mb-4">
             <div className="course-1-item">
                 <figure className="thumnail">
-                    <img src={course.img} alt="Image" className="img-fluid" />
+                    {/* 800 x 494 px  */}
+                    <Image src={course.img} alt="Image" className="img-fluid"
+                        width={"800px"} height="494px"
+                        //   layout='fill' objectFit='cover'
+                        layout='responsive'
+                    />
                     <div className="price">{course.price}</div>
                     <div className="category"><h3>{course.title}</h3></div>
                 </figure>

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import Breadcrumb from '../components/common/Breadcrumb'
 import Cta from '../components/common/Cta'
@@ -22,8 +23,8 @@ const about = () => {
     return (
         <>
             <div className="site-section">
-                <Jumbotron title='About Us'/>
-                <Breadcrumb currentPage='About'/>
+                <Jumbotron title='About Us' />
+                <Breadcrumb currentPage='About' />
                 <div className="container pt-5 mb-5">
                     <div className="row">
                         <div className="col-lg-4">
@@ -47,7 +48,7 @@ const about = () => {
                     </div>
                 </div>
 
-                <div className="section-bg style-1" style={{ backgroundImage: 'url("/assets/images/hero_1.jpg")' }}>
+                <div className="section-bg style-1" style={{ backgroundImage: 'url("assets/images/hero_1.jpg")' }}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-4 col-md-6 mb-5 mb-lg-0">
@@ -83,7 +84,12 @@ const about = () => {
                         <div className="row">
                             <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
                                 <div className="feature-1 border person text-center">
-                                    <img src="/assets/images/person_1.jpg" alt="Image" className="img-fluid" />
+                                    <div className="top-shift">
+                                        <Image src="/assets/images/person_1.jpg" alt="Image" className="img-fluid"
+                                            width={"100px"} height="100px"
+                                        />
+                                    </div>
+
                                     <div className="feature-1-content">
                                         <h2>Craig Daniel</h2>
                                         <span className="position mb-3 d-block">Math Teacher</span>
@@ -93,7 +99,11 @@ const about = () => {
                             </div>
                             <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
                                 <div className="feature-1 border person text-center">
-                                    <img src="/assets/images/person_2.jpg" alt="Image" className="img-fluid" />
+                                    <div className="top-shift">
+                                        <Image src="/assets/images/person_2.jpg" alt="Image" className="img-fluid"
+                                            width={"100px"} height="100px"
+                                        />
+                                    </div>
                                     <div className="feature-1-content">
                                         <h2>Taylor Simpson</h2>
                                         <span className="position mb-3 d-block">Math Teacher</span>
@@ -103,7 +113,11 @@ const about = () => {
                             </div>
                             <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
                                 <div className="feature-1 border person text-center">
-                                    <img src="/assets/images/person_3.jpg" alt="Image" className="img-fluid" />
+                                    <div className="top-shift">
+                                        <Image src="/assets/images/person_3.jpg" alt="Image" className="img-fluid"
+                                            width={"100px"} height="100px"
+                                        />
+                                    </div>
                                     <div className="feature-1-content">
                                         <h2>Jonas Tabble</h2>
                                         <span className="position mb-3 d-block">Math Teacher</span>
@@ -113,7 +127,11 @@ const about = () => {
                             </div>
                             <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
                                 <div className="feature-1 border person text-center">
-                                    <img src="/assets/images/person_4.jpg" alt="Image" className="img-fluid" />
+                                    <div className="top-shift">
+                                        <Image src="/assets/images/person_4.jpg" alt="Image" className="img-fluid"
+                                            width={"100px"} height="100px"
+                                        />
+                                    </div>
                                     <div className="feature-1-content">
                                         <h2>Craig Daniel</h2>
                                         <span className="position mb-3 d-block">Math Teacher</span>
@@ -123,7 +141,11 @@ const about = () => {
                             </div>
                             <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
                                 <div className="feature-1 border person text-center">
-                                    <img src="/assets/images/person_2.jpg" alt="Image" className="img-fluid" />
+                                <div className="top-shift">
+                                        <Image src="/assets/images/person_1.jpg" alt="Image" className="img-fluid"
+                                            width={"100px"} height="100px"
+                                        />
+                                    </div>
                                     <div className="feature-1-content">
                                         <h2>Taylor Simpson</h2>
                                         <span className="position mb-3 d-block">Math Teacher</span>
@@ -133,7 +155,11 @@ const about = () => {
                             </div>
                             <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
                                 <div className="feature-1 border person text-center">
-                                    <img src="/assets/images/person_3.jpg" alt="Image" className="img-fluid" />
+                                <div className="top-shift">
+                                        <Image src="/assets/images/person_1.jpg" alt="Image" className="img-fluid"
+                                            width={"100px"} height="100px"
+                                        />
+                                    </div>
                                     <div className="feature-1-content">
                                         <h2>Jonas Tabble</h2>
                                         <span className="position mb-3 d-block">Math Teacher</span>

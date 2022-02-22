@@ -2,7 +2,7 @@ import React from 'react'
 
 const Cta = () => {
     return (
-        <div className="site-section ftco-subscribe-1" style={{ backgroundImage: 'url("/assets/images/bg_1.jpg")' }}>
+        <div className="site-section ftco-subscribe-1" style={{ backgroundImage: 'url("assets/images/bg_1.jpg")' }}>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-7">

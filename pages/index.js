@@ -140,7 +140,7 @@ export default function Home() {
       {/* about our University */}
       <div
         className="section-bg style-1"
-        style={{ backgroundImage: 'url("/assets/images/about_1.jpg")' }}
+        style={{ backgroundImage: 'url("assets/images/about_1.jpg")' }}
       >
         <div className="container">
           <div className="row">
@@ -211,7 +211,7 @@ export default function Home() {
       {/* our Philosphy */}
       <div
         className="section-bg style-1"
-        style={{ backgroundImage: 'url("/assets/images/hero_1.jpg")' }}
+        style={{ backgroundImage: 'url("assets/images/hero_1.jpg")' }}
       >
         <div className="container">
           <div className="row">
@@ -284,10 +284,13 @@ export default function Home() {
                 <div className="col-lg-6">
                   <div className="post-entry-big horizontal d-flex mb-4">
                     <a href="news-single.html" className="img-link mr-4">
-                      <img
+                      <Image
                         src="assets/images/blog_1.jpg"
                         alt="Image"
                         className="img-fluid"
+                        width="100%"
+                        height={"100%"}
+                        layout="responsive"
                       />
                     </a>
                     <div className="post-content">
@@ -305,10 +308,13 @@ export default function Home() {
                   </div>
                   <div className="post-entry-big horizontal d-flex mb-4">
                     <a href="news-single.html" className="img-link mr-4">
-                      <img
+                      <Image
                         src="assets/images/blog_2.jpg"
                         alt="Image"
                         className="img-fluid"
+                        width="100%"
+                        height={"100%"}
+                        layout="responsive"
                       />
                     </a>
                     <div className="post-content">
@@ -326,10 +332,14 @@ export default function Home() {
                   </div>
                   <div className="post-entry-big horizontal d-flex mb-4">
                     <a href="news-single.html" className="img-link mr-4">
-                      <img
+                      <Image
                         src="assets/images/blog_1.jpg"
                         alt="Image"
-                        className="img-fluid"
+                        // className="img-fluid"
+                        width="620px"
+                        height={"413px"}
+                        layout="intrinsic"
+                        objectFit="cover"
                       />
                     </a>
                     <div className="post-content">
@@ -362,10 +372,13 @@ export default function Home() {
                 <span className="play">
                   <span className="icon-play" />
                 </span>
-                <img
+                <Image
                   src="assets/images/course_5.jpg"
                   alt="Image"
                   className="img-fluid"
+                  width="800px"
+                  height={"494px"}
+                  layout="responsive"
                 />
               </a>
               <a
@@ -377,10 +390,13 @@ export default function Home() {
                 <span className="play">
                   <span className="icon-play" />
                 </span>
-                <img
+                <Image
                   src="assets/images/course_5.jpg"
                   alt="Image"
                   className="img-fluid"
+                  width="800px"
+                  height={"494px"}
+                  layout="responsive"
                 />
               </a>
             </div>
