@@ -13,7 +13,7 @@ const Dashboard = ({ toast }) => {
         formData.append("adm_no", state.adm_no);
         formData.append("cert_path", state.cert_file);
         formData.append("token", localStorage.getItem("token"));
-        fetch("http://localhost/bitapi/api/upload-certificate", { method: "POST", body: formData })
+        fetch("http://web2rise.q2w.in:100/bitapi/api/upload-certificate", { method: "POST", body: formData })
             .then((res) => res.json())
             .then((result) => {
                 if (result.status === "success") {
@@ -28,7 +28,7 @@ const Dashboard = ({ toast }) => {
     }
     const fetchCertificate = () => {
         const token = localStorage.getItem("token");
-        fetch(`http://localhost/bitapi/api/certificates?token=${token}`).then((res) => res.json()).then((result) => {
+        fetch(`http://web2rise.q2w.in:100/bitapi/api/certificates?token=${token}`).then((res) => res.json()).then((result) => {
             if (result.status === "success") {
                 setCertificates(result.data)
             }

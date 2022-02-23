@@ -9,7 +9,7 @@ const LoginForm = ({ setUserLogin, toast }) => {
         formData.append("username", crendetials.username);
         formData.append("password", crendetials.password);
 
-        fetch("http://localhost/bitapi/api/login", { method: "POST", body: formData })
+        fetch("http://web2rise.q2w.in:100/bitapi/api/login", { method: "POST", body: formData })
             .then((res) => res.json())
             .then((result) => {
                 if (result.status === "success") {

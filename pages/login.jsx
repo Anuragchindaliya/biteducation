@@ -9,7 +9,7 @@ const Login = () => {
     const isValidToken = () => {
         if (localStorage.getItem("token")) {
             const token = localStorage.getItem("token")
-            fetch(`http://localhost/bitapi/api/validate-token?token=${token}`)
+            fetch(`http://web2rise.q2w.in:100/bitapi/api/validate-token?token=${token}`)
                 .then((res) => res.json())
                 .then((result) => {
                     if (result.status === "success") {
@@ -29,7 +29,7 @@ const Login = () => {
         const formData = new FormData();
         formData.append("token", localStorage.getItem("token"));
         formData.append("id", localStorage.getItem("id"));
-        fetch("http://localhost/bitapi/api/logout", { method: "POST", body: formData })
+        fetch("http://web2rise.q2w.in:100/bitapi/api/logout", { method: "POST", body: formData })
             .then((res) => res.json())
             .then((result) => {
                 if (result.status === "success") {

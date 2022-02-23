@@ -9,7 +9,7 @@ const DownloadCertificate = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const { sr_no, adm_no } = state;
-        fetch(`http://localhost/bitapi/api/certificate?sr_no=${sr_no}&adm_no=${adm_no}`)
+        fetch(`http://web2rise.q2w.in:100/bitapi/api/certificate?sr_no=${sr_no}&adm_no=${adm_no}`)
             .then((res) => res.json())
             .then((result) => {
                 if (result.status === "success") {
