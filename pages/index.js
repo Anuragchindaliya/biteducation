@@ -151,9 +151,9 @@ export default function Home() {
             </div>
             <div className="col-lg-8">
               <p className="lead">
-                DICS Computer Education is an Accredited By Nielit Under MCIT
+                BIT Computer Education is an Accredited By Nielit Under MCIT
                 (Ministry OF Communication and Information Technology) Govt. Of
-                India. DICS has been established with a primary objective to
+                India. BIT has been established with a primary objective to
                 enhance the skills of the youth of India at Affordable Fee to
                 meet the growing demands of modern industrialization.
               </p>
