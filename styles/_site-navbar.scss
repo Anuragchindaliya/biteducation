@@ -274,11 +274,12 @@
 			&:hover {
 				color: $primary;
 			}
+			
 		}
 		li {
 			position: relative;
 			display: block;
-			.active {
+			&.active {
 				> a {
 					color: $primary;
 				}

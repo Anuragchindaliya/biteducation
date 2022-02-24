@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 
+import { FaHeart } from "react-icons/fa";
+
 const Footer = () => {
     return (
         <div className="footer">
@@ -49,7 +51,7 @@ const Footer = () => {
                         <div className="copyright">
                             <p>
                                 {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
-                                Copyright © All rights reserved | This template is made with <i className="icon-heart" aria-hidden="true" /> by <a href="https://colorlib.com" target="_blank" rel='noreferrer'>Colorlib</a>
+                                Copyright © All rights reserved | This template is made with <FaHeart /> by <a href="https://colorlib.com" target="_blank" rel='noreferrer'>Colorlib</a>
                                 {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
                             </p>
                         </div>

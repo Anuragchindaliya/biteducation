@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Banner from "../components/Banner";
 import CourseCard from "../components/CourseCard";
+import { VscMortarBoard, VscWorkspaceTrusted } from "react-icons/vsc";
+import { FaPlay } from "react-icons/fa";
+import Services from "../components/common/Services";
 
 export default function Home() {
   const courses = [
@@ -80,7 +83,9 @@ export default function Home() {
             <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
               <div className="feature-1 border">
                 <div className="icon-wrapper bg-primary">
-                  <span className="flaticon-mortarboard text-white" />
+                  <span>
+                    <VscMortarBoard />
+                  </span>
                 </div>
                 <div className="feature-1-content">
                   <h2>Personalize Learning</h2>
@@ -99,7 +104,9 @@ export default function Home() {
             <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
               <div className="feature-1 border">
                 <div className="icon-wrapper bg-primary">
-                  <span className="flaticon-school-material text-white" />
+                  <span>
+                    <VscWorkspaceTrusted />
+                  </span>
                 </div>
                 <div className="feature-1-content">
                   <h2>Trusted Courses</h2>
@@ -118,7 +125,9 @@ export default function Home() {
             <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
               <div className="feature-1 border">
                 <div className="icon-wrapper bg-primary">
-                  <span className="flaticon-library text-white" />
+                  <span>
+                    <VscMortarBoard />
+                  </span>
                 </div>
                 <div className="feature-1-content">
                   <h2>Tools for Students</h2>
@@ -209,42 +218,7 @@ export default function Home() {
       </div>
 
       {/* our Philosphy */}
-      <div
-        className="section-bg style-1"
-        style={{ backgroundImage: 'url("assets/images/hero_1.jpg")' }}
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-4 col-md-6 mb-5 mb-lg-0">
-              <span className="icon flaticon-mortarboard" />
-              <h3>Our Philosphy</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Reiciendis recusandae, iure repellat quis delectus ea? Dolore,
-                amet reprehenderit.
-              </p>
-            </div>
-            <div className="col-lg-4 col-md-6 mb-5 mb-lg-0">
-              <span className="icon flaticon-school-material" />
-              <h3>Academics Principle</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Reiciendis recusandae, iure repellat quis delectus ea? Dolore,
-                amet reprehenderit.
-              </p>
-            </div>
-            <div className="col-lg-4 col-md-6 mb-5 mb-lg-0">
-              <span className="icon flaticon-library" />
-              <h3>Key of Success</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Reiciendis recusandae, iure repellat quis delectus ea? Dolore,
-                amet reprehenderit.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Services />
       {/* news updates */}
       <div className="news-updates">
         <div className="container">
@@ -370,7 +344,9 @@ export default function Home() {
                 data-ratio={2}
               >
                 <span className="play">
-                  <span className="icon-play" />
+                  <span>
+                    <FaPlay />
+                  </span>
                 </span>
                 <Image
                   src="assets/images/course_5.jpg"
@@ -388,7 +364,9 @@ export default function Home() {
                 data-ratio={2}
               >
                 <span className="play">
-                  <span className="icon-play" />
+                  <span>
+                    <FaPlay />
+                  </span>
                 </span>
                 <Image
                   src="assets/images/course_5.jpg"

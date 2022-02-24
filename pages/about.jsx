@@ -1,8 +1,10 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import Breadcrumb from '../components/common/Breadcrumb'
 import Cta from '../components/common/Cta'
 import Jumbotron from '../components/common/Jumbotron'
+import Services from '../components/common/Services'
 import DescriptionCard from '../components/DescriptionCard'
 
 const about = () => {
@@ -22,6 +24,9 @@ const about = () => {
     ]
     return (
         <>
+            <Head>
+                <title>About - Bit Education</title>
+            </Head>
             <div className="site-section">
                 <Jumbotron title='About Us' />
                 <Breadcrumb currentPage='About' />
@@ -48,29 +53,7 @@ const about = () => {
                     </div>
                 </div>
 
-                <div className="section-bg style-1" style={{ backgroundImage: 'url("assets/images/hero_1.jpg")' }}>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-4 col-md-6 mb-5 mb-lg-0">
-                                <span className="icon flaticon-mortarboard" />
-                                <h3>Our Philosphy</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure repellat quis delectus ea? Dolore, amet reprehenderit.</p>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-5 mb-lg-0">
-                                <span className="icon flaticon-school-material" />
-                                <h3>Academics Principle</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure repellat quis delectus ea?
-                                    Dolore, amet reprehenderit.</p>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-5 mb-lg-0">
-                                <span className="icon flaticon-library" />
-                                <h3>Key of Success</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure repellat quis delectus ea?
-                                    Dolore, amet reprehenderit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Services />
                 {/* our teacher section */}
                 <div className="site-section">
                     <div className="container">
@@ -141,7 +124,7 @@ const about = () => {
                             </div>
                             <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
                                 <div className="feature-1 border person text-center">
-                                <div className="top-shift">
+                                    <div className="top-shift">
                                         <Image src="/assets/images/person_1.jpg" alt="Image" className="img-fluid"
                                             width={"100px"} height="100px"
                                         />
@@ -155,7 +138,7 @@ const about = () => {
                             </div>
                             <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
                                 <div className="feature-1 border person text-center">
-                                <div className="top-shift">
+                                    <div className="top-shift">
                                         <Image src="/assets/images/person_1.jpg" alt="Image" className="img-fluid"
                                             width={"100px"} height="100px"
                                         />

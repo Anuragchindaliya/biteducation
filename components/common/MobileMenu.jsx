@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import NavLink from './NavLink';
 
 const MobileMenu = () => {
-    const [isMenuActive, setMenuActive] = useState(false);
     return (
         <ul className="site-nav-wrap">
             <NavLink href={"/"} exact >Home</NavLink>

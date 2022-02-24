@@ -20,7 +20,17 @@ function NavLink({ href, exact, children, ...props }) {
     if (isActive) {
         props.className += ' active';
     }
-    return (<li {...props}>
+
+    if (props.mob) {
+        props.onClick = () => {
+            const body = document.querySelector("body")
+            body.classList.remove("offcanvas-menu");
+        };
+    }
+
+
+
+    return (<li {...props} >
         <Link href={href}>
             {children}
         </Link>

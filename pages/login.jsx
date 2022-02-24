@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { toast, ToastContainer } from 'react-toastify';
@@ -43,6 +44,9 @@ const Login = () => {
     }
     return (
         <div className='site-section'>
+            <Head>
+                <title>Admin Login - Bit Education</title>
+            </Head>
             <div className="site-section ftco-subscribe-1 site-blocks-cover pb-4" style={{ backgroundImage: 'url("assets/images/bg_1.jpg")' }}>
                 <div className="container">
                     <div className="row align-items-end justify-content-center text-center">

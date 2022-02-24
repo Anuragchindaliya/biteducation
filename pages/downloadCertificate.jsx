@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react'
@@ -18,16 +19,19 @@ const DownloadCertificate = () => {
                     } else {
                         setLink(result.data.cert_path)
                     }
-                    console.log("download now")
+                  
                 } else {
 
-                    console.log("not found")
+                    
                 }
             });
 
     }
     return (
         <div className='site-section'>
+            <Head>
+                <title>Download Certificates - Bit Education</title>
+            </Head>
             <div className="site-section ftco-subscribe-1 site-blocks-cover pb-4" style={{ backgroundImage: 'url("assets/images/bg_1.jpg")' }}>
                 <div className="container">
                     <div className="row align-items-end justify-content-center text-center">

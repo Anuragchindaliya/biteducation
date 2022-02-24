@@ -17,10 +17,10 @@ const LoginForm = ({ setUserLogin, toast }) => {
                     localStorage.setItem("id", result.data.id);
                     setUserLogin(true)
                     toast("Login")
-                    console.log("success")
+                  
                 } else {
                     toast("wrong credentials")
-                    console.log("wrong crentials")
+                   
                 }
             });
 

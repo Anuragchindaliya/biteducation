@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React, { useState } from 'react'
 import Breadcrumb from '../components/common/Breadcrumb'
 import Jumbotron from '../components/common/Jumbotron'
@@ -11,35 +12,35 @@ const Courses = () => {
             descriptions: ["Basic fundamental, MS Paint, Keyboard Keys, Microsoft Word, Microsoft Excel,   Microsoft Power Point, File Management, Desktop Editing, Shortcut Keys. Internet:- Searching information and images, Prepare file & Project,  Printout, Create & sending email etc."],
             img: "/assets/images/course_6.jpg",
             imgPos: "right",
-            duration:"2 Months"
+            duration: "2 Months"
         },
         {
             title: "ADVANCE EXCEL & INTERNET",
             descriptions: ["Advance Internet:- Scanning documents, Railway Ticket booking, Govt. Jobs Online Form. Advance Excel:-      Vlookup, H lookup , Consolidate, Data Filter, Chart/Graph, Pivot Table,  Conditional Formatting. Salary Slip, Data Entry , Company Work."],
             img: "/assets/images/course_5.jpg",
             imgPos: "left",
-            duration:"10 Days"
+            duration: "10 Days"
         },
         {
             title: "TALLY ERP 9",
             descriptions: ["Basic fundamental of Accounting, Entries in Register, Company information, create delete and alteration of company, Accounting information: Groups and Ledger. Accounting Voucher:- Contra, Payment, Receipt, Sale, Purchase, Journal, Debit Note, Credit Note. Inventory:- Stock Group, Units of Measure, Stock item. GST (Goods and Service Tax):- Sale bill, Purchase Bill.  Balance Sheet, Inventory Report, Profit & Loss A/c. Statement of Account, Tax deduction at source (TDS). Payroll:- Employee Group, Pay head, Employees, Salary detail, Payroll Voucher. Basic knowledge of internet."],
             img: "/assets/images/course_6.jpg",
             imgPos: "right",
-            duration:"3 Months"
+            duration: "3 Months"
         },
         {
             title: "COMPUTER REPARING",
             descriptions: ["Basic Information of Computer Parts:- Motherboard, RAM, CPU, Hard Disk, SMPS etc. Computer Assembling, Booting process and System setup, Create partition and formatting the partition, windows installation(Windows XP, Windows 7, Windows 8, Windows 10), Software Installation (System software and Application software), Desktop editing and File Management, Manage Computer Console, Administrative Rights , User creation and setting, Password Policy, Disk partition from Manage Console, Antivirus installation, Printer installation (inkjet & LaserJet)"],
             img: "/assets/images/course_5.jpg",
             imgPos: "left",
-            duration:"2 Months"
+            duration: "2 Months"
         },
         {
             title: "PHOTOSHOP & COREL DRAW",
             descriptions: ["Opening new files, existing files, exploring the toolbox, Application Bar, Exploring panels & Menus, creating & viewing a new document. Zooming & panning an image rulers, guides undoing, steps with history , color correction, understanding pixels & resolution, Cropping & straightening an image, adjusting canvas size and canvas rotation. Elliptical marquee tool, using magic wand & free hand tool, combining selection, magnetic polygonal lasso tool. Quick selection & refine edge, modify selection, understanding the background layer. Creating, selecting, linking & deleting layers. Blending modes, opacity & fill, creating modifying text."],
             img: "/assets/images/course_6.jpg",
             imgPos: "right",
-            duration:"2 Months"
+            duration: "2 Months"
         },
         {
             title: "AUTOCAD  MECHANICAL",
@@ -54,11 +55,14 @@ const Courses = () => {
             ],
             img: "/assets/images/course_5.jpg",
             imgPos: "left",
-            duration:"1-2 Months"
+            duration: "1-2 Months"
         },
     ]
     return (
         <div className='site-section '>
+            <Head>
+                <title>Courses - Bit Education</title>
+            </Head>
             <Jumbotron title='Our Courses' />
             <Breadcrumb currentPage='Courses' />
             <div className="">
