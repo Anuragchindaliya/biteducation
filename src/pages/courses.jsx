@@ -1,8 +1,7 @@
-import Head from 'next/head'
-import React, { useState } from 'react'
+
+import React from 'react'
 import Breadcrumb from '../components/common/Breadcrumb'
 import Jumbotron from '../components/common/Jumbotron'
-import CourseCard from '../components/CourseCard'
 import DescriptionCard from '../components/DescriptionCard'
 
 const Courses = () => {
@@ -60,9 +59,6 @@ const Courses = () => {
     ]
     return (
         <div className='site-section '>
-            <Head>
-                <title>Courses - Bit Education</title>
-            </Head>
             <Jumbotron title='Our Courses' />
             <Breadcrumb currentPage='Courses' />
             <div className="">

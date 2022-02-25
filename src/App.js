@@ -1,11 +1,18 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/home";
-// import About from "./pages/about";
+import {
+  Home,
+  About,
+  Courses,
+  Contact,
+  DownloadCertificate,
+  Login,
+} from "./pages";
 import "./styles/globals.css";
 import "./styles/bootstrap/bootstrap.scss";
 import "./styles/bootstrap/bootstrap-grid.scss";
 import "./styles/style.scss";
 import Header from "./components/common/Header";
+import Footer from "./components/common/Footer";
 function App() {
   return (
     <>
@@ -13,9 +20,16 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/about" element={<About />} /> */}
-          {/* <Route path="invoices" element={<Invoices />} /> */}
+          <Route path="/about" element={<About />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route
+            path="/downloadCertificate"
+            element={<DownloadCertificate />}
+          />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );

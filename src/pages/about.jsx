@@ -1,5 +1,4 @@
-import Head from 'next/head'
-import Image from 'next/image'
+
 import React from 'react'
 import Breadcrumb from '../components/common/Breadcrumb'
 import Cta from '../components/common/Cta'
@@ -7,7 +6,7 @@ import Jumbotron from '../components/common/Jumbotron'
 import Services from '../components/common/Services'
 import DescriptionCard from '../components/DescriptionCard'
 
-const about = () => {
+const About = () => {
     const servicesDescription = [
         {
             title: "Why Academics Works",
@@ -24,9 +23,7 @@ const about = () => {
     ]
     return (
         <>
-            <Head>
-                <title>About - Bit Education</title>
-            </Head>
+
 
             <Jumbotron title='About Us' />
             <Breadcrumb currentPage='About' />
@@ -68,8 +65,7 @@ const about = () => {
                         <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
                             <div className="feature-1 border person text-center">
                                 <div className="top-shift">
-                                    <Image src="/assets/images/person_1.jpg" alt="Image" className="img-fluid"
-                                        width={"100px"} height="100px"
+                                    <img src="/assets/images/person_1.jpg" alt="person 1" className="img-fluid"
                                     />
                                 </div>
 
@@ -83,8 +79,7 @@ const about = () => {
                         <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
                             <div className="feature-1 border person text-center">
                                 <div className="top-shift">
-                                    <Image src="/assets/images/person_2.jpg" alt="Image" className="img-fluid"
-                                        width={"100px"} height="100px"
+                                    <img src="/assets/images/person_2.jpg" alt="person 2" className="img-fluid"
                                     />
                                 </div>
                                 <div className="feature-1-content">
@@ -97,8 +92,8 @@ const about = () => {
                         <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
                             <div className="feature-1 border person text-center">
                                 <div className="top-shift">
-                                    <Image src="/assets/images/person_3.jpg" alt="Image" className="img-fluid"
-                                        width={"100px"} height="100px"
+                                    <img src="/assets/images/person_3.jpg" alt=" 23" className="img-fluid"
+
                                     />
                                 </div>
                                 <div className="feature-1-content">
@@ -111,8 +106,8 @@ const about = () => {
                         <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
                             <div className="feature-1 border person text-center">
                                 <div className="top-shift">
-                                    <Image src="/assets/images/person_4.jpg" alt="Image" className="img-fluid"
-                                        width={"100px"} height="100px"
+                                    <img src="/assets/images/person_4.jpg" alt=" 23" className="img-fluid"
+
                                     />
                                 </div>
                                 <div className="feature-1-content">
@@ -125,8 +120,8 @@ const about = () => {
                         <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
                             <div className="feature-1 border person text-center">
                                 <div className="top-shift">
-                                    <Image src="/assets/images/person_1.jpg" alt="Image" className="img-fluid"
-                                        width={"100px"} height="100px"
+                                    <img src="/assets/images/person_1.jpg" alt=" 23" className="img-fluid"
+
                                     />
                                 </div>
                                 <div className="feature-1-content">
@@ -139,8 +134,8 @@ const about = () => {
                         <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
                             <div className="feature-1 border person text-center">
                                 <div className="top-shift">
-                                    <Image src="/assets/images/person_1.jpg" alt="Image" className="img-fluid"
-                                        width={"100px"} height="100px"
+                                    <img src="/assets/images/person_1.jpg" alt=" 23" className="img-fluid"
+
                                     />
                                 </div>
                                 <div className="feature-1-content">
@@ -161,4 +156,4 @@ const about = () => {
     )
 }
 
-export default about
+export default About

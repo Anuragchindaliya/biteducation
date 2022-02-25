@@ -224,9 +224,6 @@ export default function Home() {
                         src="/assets/images/blog_large_1.jpg"
                         alt="blog3"
                         className="img-fluid"
-                        width="384px"
-                        height="256px"
-                        // layout="responsive"
                       />
                     </a>
                     <div className="post-content">
@@ -250,9 +247,6 @@ export default function Home() {
                         src="assets/images/blog_1.jpg"
                         alt="blog1"
                         className="img-fluid"
-                        width="100%"
-                        height={"100%"}
-                        layout="responsive"
                       />
                     </a>
                     <div className="post-content">
@@ -274,9 +268,6 @@ export default function Home() {
                         src="assets/images/blog_2.jpg"
                         alt="blop4"
                         className="img-fluid"
-                        width="100%"
-                        height={"100%"}
-                        layout="responsive"
                       />
                     </a>
                     <div className="post-content">
@@ -297,9 +288,7 @@ export default function Home() {
                       <img
                         src="assets/images/blog_1.jpg"
                         alt="blog5"
-                        // className="img-fluid"
-                        width="620px"
-                        height={"413px"}
+                        className="img-fluid"
                       />
                     </a>
                     <div className="post-content">
@@ -338,9 +327,6 @@ export default function Home() {
                   src="assets/images/course_5.jpg"
                   alt="blog2"
                   className="img-fluid"
-                  width="800px"
-                  height={"494px"}
-                  layout="responsive"
                 />
               </a>
               <a
@@ -358,9 +344,6 @@ export default function Home() {
                   src="assets/images/course_5.jpg"
                   alt="blog3"
                   className="img-fluid"
-                  width="800px"
-                  height={"494px"}
-                  layout="responsive"
                 />
               </a>
             </div>

@@ -1,5 +1,4 @@
-import Head from 'next/head';
-import Image from 'next/image';
+
 import React, { useState } from 'react'
 
 const DownloadCertificate = () => {
@@ -18,19 +17,17 @@ const DownloadCertificate = () => {
                     } else {
                         setLink(result.data.cert_path)
                     }
-                  
+
                 } else {
 
-                    
+
                 }
             });
 
     }
     return (
         <div className='site-section'>
-            <Head>
-                <title>Download Certificates - Bit Education</title>
-            </Head>
+
             <div className="site-section ftco-subscribe-1 site-blocks-cover pb-4" style={{ backgroundImage: 'url("assets/images/bg_1.jpg")' }}>
                 <div className="container">
                     <div className="row align-items-end justify-content-center text-center">
@@ -65,7 +62,7 @@ const DownloadCertificate = () => {
             <div className="mt-5 container">
                 <div className="row">
                     <div className="col-md-6 offset-md-3">
-                        {link !== "" && (link === "0" ? <h2>Not Found</h2> : <a target="_blank" download="BitEducation-certificate" href={"http://localhost/bitapi/uploads/certificates/" + link} rel="noreferrer"><Image src="/assets/images/download-pdf.svg" className='m-auto' alt='download' width={"100px"} height="100px" /> <h3>Download</h3></a>)
+                        {link !== "" && (link === "0" ? <h2>Not Found</h2> : <a target="_blank" download="BitEducation-certificate" href={"http://localhost/bitapi/uploads/certificates/" + link} rel="noreferrer"><img src="/assets/images/download-pdf.svg" className='m-auto' alt='download' width={"100px"} height="100px" /> <h3>Download</h3></a>)
                         }
                     </div>
                 </div>
