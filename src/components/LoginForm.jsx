@@ -17,10 +17,10 @@ const LoginForm = ({ setUserLogin, toast }) => {
                     localStorage.setItem("id", result.data.id);
                     setUserLogin(true)
                     toast("Login")
-                  
+
                 } else {
                     toast("wrong credentials")
-                   
+
                 }
             });
 
@@ -28,16 +28,20 @@ const LoginForm = ({ setUserLogin, toast }) => {
     }
     return (
         <div className="container">
+
+            <div className="row justify-content-center mb-2">
+                <h2 className="section-title-underline "><span>Admin Login </span></h2>
+            </div>
             <div className="row justify-content-center">
                 <form className="col-md-5" onSubmit={handleSubmit}>
                     <div className="row">
                         <div className="col-md-12 form-group">
                             <label htmlFor="username">Username</label>
-                            <input type="text" className="form-control form-control-lg" value={crendetials.username} onChange={(e) => setCrendentials({ ...crendetials, username: e.target.value })} />
+                            <input type="text"  className="form-control form-control-lg" value={crendetials.username} onChange={(e) => setCrendentials({ ...crendetials, username: e.target.value })} />
                         </div>
                         <div className="col-md-12 form-group">
                             <label htmlFor="pword">Password</label>
-                            <input type="password" className="form-control form-control-lg" value={crendetials.password} onChange={(e) => setCrendentials({ ...crendetials, password: e.target.value })} />
+                            <input type="password"className="form-control form-control-lg" value={crendetials.password} onChange={(e) => setCrendentials({ ...crendetials, password: e.target.value })} />
                         </div>
                     </div>
                     <div className="row">

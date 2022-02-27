@@ -1,8 +1,8 @@
-// import "bootstrap/dist/css/bootstrap.min.css";
-import "./styles/bootstrap/bootstrap.scss";
+// import "./styles/bootstrap/bootstrap.scss";
 // import "./styles/bootstrap/bootstrap-grid.scss";
-import "./styles/style.scss";
-import "bootstrap/dist/js/bootstrap.js";
+// import "./styles/style.scss";
+import "./styles/custom.scss";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import {
   Home,

@@ -79,7 +79,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: #183661;
+      background: #412876;
       opacity: 0.9;
       z-index: 0;
     }
@@ -96,7 +96,7 @@
       margin-bottom: 30px;
     }
     p {
-      color: #7697c6;
+      color: rgb(235, 235, 235);
     }
   }
 }
@@ -182,7 +182,8 @@
 }
 
 .social-wrap {
-  a,i {
+  a,
+  i {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -458,7 +459,7 @@
 
 .footer {
   padding: 4rem 0;
-  background: #183661;
+  background: #412875;
   font-size: 14px;
   color: $white;
   .footer-heading {
@@ -474,6 +475,7 @@
     }
   }
   a {
+    color: rgb(209, 209, 209);
     &:hover {
       color: $white;
       text-decoration: underline;
@@ -494,7 +496,7 @@
   &:before {
     position: absolute;
     content: "";
-    background: #183661;
+    background: #412875;
     opacity: 0.7;
     z-index: 1;
     top: 0;

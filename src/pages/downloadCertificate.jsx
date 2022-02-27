@@ -31,6 +31,9 @@ const DownloadCertificate = () => {
             <Jumbotron title='Certificate' />
             <Breadcrumb currentPage='Download Certificate' />
             {(link === "" || link === "0") && <div className="site-section">
+                <div className="row justify-content-center mb-2">
+                    <h2 className="section-title-underline "><span>Download Certificate </span></h2>
+                </div>
                 <form className="container" onSubmit={handleSubmit}>
                     <div className="row">
                         <div className="col-md-6 form-group">

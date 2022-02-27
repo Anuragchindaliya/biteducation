@@ -1,7 +1,5 @@
-@import "bootstrap/functions";
-// @import "bootstrap/variables";
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
+$primary: #ff4136;
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 /* Base */
 @import "site-base";
@@ -20,3 +18,5 @@
     margin-top: 5em !important;
   }
 }
+
+
