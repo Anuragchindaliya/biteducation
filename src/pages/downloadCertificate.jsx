@@ -1,5 +1,7 @@
 
 import React, { useState } from 'react'
+import Breadcrumb from '../components/common/Breadcrumb';
+import Jumbotron from '../components/common/Jumbotron';
 
 const DownloadCertificate = () => {
     const [state, setState] = useState({ sr_no: "", adm_no: "" });
@@ -23,22 +25,11 @@ const DownloadCertificate = () => {
 
                 }
             });
-
     }
     return (
-        <div className='site-section'>
-
-            <div className="site-section ftco-subscribe-1 site-blocks-cover pb-4" style={{ backgroundImage: 'url("assets/images/bg_1.jpg")' }}>
-                <div className="container">
-                    <div className="row align-items-end justify-content-center text-center">
-
-                        <div className="col-lg-7">
-                            <h2 className="mb-0">Certificate</h2>
-                            <p>Download Certificate</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div className=''>
+            <Jumbotron title='Certificate' />
+            <Breadcrumb currentPage='Download Certificate' />
             {(link === "" || link === "0") && <div className="site-section">
                 <form className="container" onSubmit={handleSubmit}>
                     <div className="row">
@@ -62,11 +53,11 @@ const DownloadCertificate = () => {
             <div className="mt-5 container">
                 <div className="row">
                     <div className="col-md-6 offset-md-3">
-                        {link !== "" && (link === "0" ? <h2>Not Found</h2> : <a target="_blank" download="BitEducation-certificate" href={"http://localhost/bitapi/uploads/certificates/" + link} rel="noreferrer"><img src="/assets/images/download-pdf.svg" className='m-auto' alt='download' width={"100px"} height="100px" /> <h3>Download</h3></a>)
+                        {link !== "" && (link === "0" ? <h2>Not Found</h2> : <a target="_blank" download="BitEducation-certificate" href={"http://localhost/bitapi/uploads/certificates/" + link} rel="noreferrer"><img src="./assets/images/download-pdf.svg" className='m-auto' alt='download' width={"100px"} height="100px" /> <h3>Download</h3></a>)
                         }
-                    </div>
-                </div>
-            </div>
+                    </div >
+                </div >
+            </div >
 
         </div >
     )

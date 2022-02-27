@@ -11,7 +11,7 @@ const CourseCard = ({ course }) => {
                         width={"800px"} height="494px"
                         layout='responsive'
                     />
-                    <div className="price">{course.price}</div>
+                    {/* <div className="price">{course.price}</div> */}
                     <div className="category"><h3>{course.title}</h3></div>
                 </figure>
                 <div className="course-1-content pb-4">

@@ -3,16 +3,20 @@ import React from 'react'
 
 const Banner = () => {
     return (
-        <div className="container col-xxl-8 px-4 py-5">
+        <div className="container col-xxl-8">
             <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div className="col-10 col-sm-8 col-lg-6">
                     <img src="./assets/images/banner.svg" className="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width={700} height={500} loading="lazy" />
                 </div>
                 <div className="col-lg-6">
-                    <h1 className="section-title-underline mb-5"><span>You only have know one thing
+                    <h1 className="section-title-underline mb-3"><span>Welcome to BIT Computer Education</span></h1>
+                    <p className="">
+                        BIT Computer Education and Services is a leading Skills and Talent Development Institute that is building a manpower pool for global industry requirements. The institute was set up in 2007 to help the industry overcome its human resource challenges.
 
-                    </span></h1>
-                    <p className="lead">  You can learn anything BIT COMPUTER EDUCATION</p>
+                        BIT Computer Education and Services offers training and development solutions to individuals, Enterprises and Institutions. We care deeply about each and every one of our students and don’t want any of them to have to suffer the consequences of living in poverty, which is our main motivation for teaching.
+
+                        {/* <p>The mission of the Computer Education Software Society is to make the people self independent so that they can live respectfully in the society.</p> */}
+                    </p>
                     <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                         <Link to="/courses" className="btn btn-primary fw-500 me-2">
                             Get Started

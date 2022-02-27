@@ -1,37 +1,30 @@
 import React from 'react'
 
 import { FaHeart } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import { courses } from '../../pages/api/courses';
+import { menus } from '../../pages/api/menus';
 
 const Footer = () => {
     return (
         <div className="footer">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-3">
-                        <p className="mb-4"><img src="/assets/images/logo.png" alt='logo' className="img-fluid" /></p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto iure.</p>
-                        <p><a href="#/">Learn More</a></p>
+                    <div className="col-lg-4">
+                        <p className="mb-4"><img src="./assets/images/BIT-LOGO-600.png" alt='logo' width="100" height={"100"} className="img-fluid" /></p>
+                        <p>BIT Computer Education and Services offers training and development solutions to individuals, Enterprises and Institutions. We care deeply about each and every one of our students and don’t want any of them to have to suffer the consequences of living in poverty, which is our main motivation for teaching.</p>
+                        <p><Link to="/about">Read More</Link></p>
                     </div>
-                    <div className="col-lg-3">
-                        <h3 className="footer-heading"><span>Our Campus</span></h3>
+                    <div className="col-lg-2">
+                        <h3 className="footer-heading"><span>Menu</span></h3>
                         <ul className="list-unstyled">
-                            <li><a href="#/">Acedemic</a></li>
-                            <li><a href="#/">News</a></li>
-                            <li><a href="#/">Our Interns</a></li>
-                            <li><a href="#/">Our Leadership</a></li>
-                            <li><a href="#/">Careers</a></li>
-                            <li><a href="#/">Human Resources</a></li>
+                            {menus.map((menu, i) => (<li key={i}><Link to={menu.link}>{menu.title}</Link></li>))}
                         </ul>
                     </div>
                     <div className="col-lg-3">
                         <h3 className="footer-heading"><span>Our Courses</span></h3>
                         <ul className="list-unstyled">
-                            <li><a href="#/">Math</a></li>
-                            <li><a href="#/">Science &amp; Engineering</a></li>
-                            <li><a href="#/">Arts &amp; Humanities</a></li>
-                            <li><a href="#/">Economics &amp; Finance</a></li>
-                            <li><a href="#/">Business Administration</a></li>
-                            <li><a href="#/">Computer Science</a></li>
+                            {courses.slice(0,5).map((course, i) => (<li key={i}><Link to={`/courses#${course.title}`}>{course.title}</Link></li>))}
                         </ul>
                     </div>
                     <div className="col-lg-3">
@@ -49,15 +42,13 @@ const Footer = () => {
                     <div className="col-12">
                         <div className="copyright">
                             <p>
-                                {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
-                                Copyright © All rights reserved | This template is made with <FaHeart /> by <a href="https://colorlib.com" target="_blank" rel='noreferrer'>Colorlib</a>
-                                {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
+                                Copyright © All rights reserved | This template is made with <FaHeart /> by <a href="https://web2rise.com" target="_blank" rel='noreferrer'>Web2Rise</a>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

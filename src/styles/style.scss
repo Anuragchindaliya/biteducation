@@ -9,6 +9,13 @@
 /* Blocks */
 @import "site-blocks";
 
-.top-shift{
-    margin-top: -50px;
+// Example: Style from medium breakpoint and down
+.mt-sm-5 {
+  @include media-breakpoint-down(xl) {
+    margin-top: 5em !important;
+    padding-top: 5em;
+  }
+  @include media-breakpoint-down(sm) {
+    margin-top: 5em !important;
+  }
 }

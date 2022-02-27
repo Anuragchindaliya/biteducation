@@ -15,7 +15,7 @@ const Testimonials = () => {
                     <div className="ftco-testimonial-1">
                         <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                             <img
-                                src="assets/images/person_1.jpg"
+                                src="./assets/images/person_1.jpg"
                                 alt="Image"
                                 className="img-fluid mr-3"
                             />
@@ -36,7 +36,7 @@ const Testimonials = () => {
                     <div className="ftco-testimonial-1">
                         <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                             <img
-                                src="assets/images/person_2.jpg"
+                                src="./assets/images/person_2.jpg"
                                 alt="Image"
                                 className="img-fluid mr-3"
                             />
@@ -57,7 +57,7 @@ const Testimonials = () => {
                     <div className="ftco-testimonial-1">
                         <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                             <img
-                                src="assets/images/person_4.jpg"
+                                src="./assets/images/person_4.jpg"
                                 alt="Image"
                                 className="img-fluid mr-3"
                             />
@@ -78,7 +78,7 @@ const Testimonials = () => {
                     <div className="ftco-testimonial-1">
                         <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                             <img
-                                src="assets/images/person_3.jpg"
+                                src="./assets/images/person_3.jpg"
                                 alt="Image"
                                 className="img-fluid mr-3"
                             />
@@ -99,7 +99,7 @@ const Testimonials = () => {
                     <div className="ftco-testimonial-1">
                         <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                             <img
-                                src="assets/images/person_2.jpg"
+                                src="./assets/images/person_2.jpg"
                                 alt="Image"
                                 className="img-fluid mr-3"
                             />
@@ -120,7 +120,7 @@ const Testimonials = () => {
                     <div className="ftco-testimonial-1">
                         <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                             <img
-                                src="assets/images/person_4.jpg"
+                                src="./assets/images/person_4.jpg"
                                 alt="Image"
                                 className="img-fluid mr-3"
                             />
