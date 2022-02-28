@@ -59,10 +59,11 @@ const Gallery = () => {
             </div>
             <Modal
                 show={modalShow}
+                size="xl"
                 onHide={() => setModalShow(false)}
                 aria-labelledby="contained-modal-title-vcenter"
                 fullscreen
-                size="lg"
+                
                 centered
             >
                 <Carousel {...settings}>

@@ -14,7 +14,7 @@ const Courses = () => {
                 <div className="container">
 
                     {/* {courses.map((course, i) => <CourseCard key={i} course={course} />)} */}
-                    {courses.map((service, i) => <DescriptionCard key={i} data={service} />)}
+                    {courses.map((service, i) => <DescriptionCard key={i} data={service} index={i} />)}
 
                 </div>
             </div>

@@ -7,58 +7,9 @@ import Services from "../components/common/Services";
 import Cta from "../components/common/Cta";
 import BannerSliders from "../components/BannerSliders";
 import Testimonials from "../components/Testimonials";
+import { courses } from "./api/courses";
 
 export default function Home() {
-  const courses = [
-    {
-      title: "BASIC COMUTER COURSE",
-      img: "./assets/images/course_6.jpg",
-      description:
-        "Basic fundamental, MS Paint, Keyboard Keys, Microsoft Word, Microsoft Excel,   Microsoft Power Point, File Management, Desktop Editing, Shortcut Keys. Internet:- Searching information and images, Prepare file & Project,  Printout, Create & sending email etc.",
-      price: "Top",
-      duration: "2 Months",
-    },
-    {
-      title: "ADVANCE EXCEL & INTERNET",
-      img: "./assets/images/course_2.jpg",
-      description:
-        "Advance Internet:- Scanning documents, Railway Ticket booking, Govt. Jobs Online Form. Advance Excel:-      Vlookup, H lookup , Consolidate, Data Filter, Chart/Graph, Pivot Table,  Conditional Formatting. Salary Slip, Data Entry , Company Work.",
-      price: "Rs. 800/-",
-      duration: "10 Days",
-    },
-    {
-      title: "TALLY ERP 9",
-      img: "./assets/images/course_4.jpg",
-      description:
-        "Basic fundamental of Accounting, Entries in Register, Company information, create delete and alteration of company, Accounting information: Accounting Voucher, Inventory Mangement, Stock item. GST (Goods and Service Tax), Payroll.",
-      price: "Rs. 3000/-",
-      duration: "3 Months	",
-    },
-    {
-      title: "COMPUTER REPARING",
-      img: "./assets/images/course_4.jpg",
-      description:
-        "Basic Information of Computer Parts:- Motherboard, RAM, CPU, Hard Disk, SMPS etc. Computer Assembling, Booting process and System setup, Create partition and formatting the partition, windows installation(Windows XP, Windows 7, Windows 8, Windows 10), Software Installation (System software and Application software), Desktop editing and File Management, Manage Computer Console, Administrative Rights , User creation and setting, Password Policy, Disk partition from Manage Console, Antivirus installation, Printer installation (inkjet & LaserJet).",
-      price: "TOP",
-      duration: "2 Months",
-    },
-    {
-      title: "PHOTOSHOP & COREL DRAW",
-      img: "./assets/images/course_4.jpg",
-      description:
-        "Opening new files, existing files, exploring the toolbox, Application Bar, Exploring panels & Menus, creating & viewing a new document. Zooming & panning an image rulers, guides undoing, steps with history , color correction, understanding pixels & resolution, Cropping & straightening an image, adjusting canvas size and canvas rotation. Elliptical marquee tool, using magic wand & free hand tool, combining selection, magnetic polygonal lasso tool. Quick selection & refine edge, modify selection, understanding the background layer. Creating, selecting, linking & deleting layers. Blending modes, opacity & fill, creating modifying text.",
-      price: "TOP",
-      duration: "3 Months	",
-    },
-    {
-      title: "AUTOCAD MECHANICAL",
-      img: "./assets/images/course_4.jpg",
-      description:
-        "Basic Information of Computer Parts:- Motherboard, RAM, CPU, Hard Disk, SMPS etc. Computer Assembling, Booting process and System setup, Create partition and formatting the partition, windows installation(Windows XP, Windows 7, Windows 8, Windows 10), Software Installation (System software and Application software), Desktop editing and File Management, Manage Computer Console, Administrative Rights , User creation and setting, Password Policy, Disk partition from Manage Console, Antivirus installation, Printer installation (inkjet & LaserJet).",
-      price: "TOP",
-      duration: "3 Months	",
-    },
-  ];
   return (
     <div className="">
       <BannerSliders />

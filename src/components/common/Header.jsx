@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import React, { useEffect } from 'react'
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaUsers } from "react-icons/fa";
-import { BsQuestionCircle, BsTelephoneFill, BsEnvelope, BsLockFill } from "react-icons/bs";
+import { BsQuestionCircle, BsTelephoneFill, BsEnvelope, BsLockFill, BsFillFileEarmarkArrowDownFill } from "react-icons/bs";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Nav from './Nav';
 import { menus } from '../../pages/api/menus';
@@ -21,7 +21,7 @@ const Header = () => {
       body.classList.add("offcanvas-menu");
     }
   }
- 
+
 
 
   return (
@@ -38,10 +38,10 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <div className="py-2 bg-light">
+      <div className="py-2 bg-primary">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-9 d-none d-lg-block">
+            <div className="col-lg-8 d-none d-lg-block">
               <Link to="/contact" className="small mr-3">
                 <span className=" mr-2"><BsQuestionCircle /></span> Have a questions?
               </Link>
@@ -52,10 +52,11 @@ const Header = () => {
                 <span className="mr-2"><BsEnvelope /></span> bitcomputer007@gmail.com
               </a>
             </div>
-            <div className="col-lg-3 text-right">
-              <Link to="/login" className="small mr-3">
-                <BsLockFill /> Log In</Link>
-              <a href="register.html" className="small btn btn-primary rounded-0"><span className='pr-1'><FaUsers /></span> Register</a>
+            <div className="col-lg-4 text-right ">
+              <Link to="/login" className="small mr-3 text-white">
+                <BsLockFill /> Log In
+              </Link>
+              <Link to="/downloadcertificate" className="small btn bg-white text-danger"><span className='pr-1'><BsFillFileEarmarkArrowDownFill /></span> Download Certificate</Link>
             </div>
           </div>
         </div>

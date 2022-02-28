@@ -15,7 +15,7 @@ const CourseCard = ({ course }) => {
                     <div className="category"><h3>{course.title}</h3></div>
                 </figure>
                 <div className="course-1-content pb-4">
-                    <p className="desc mb-4">{course.description}</p>
+                    <p className="desc mb-4">{course.descriptions[0].slice(0, 180)}</p>
                     <p><button className="btn btn-primary rounded-0 px-4 text-white">Duration : {course.duration}</button></p>
                 </div>
             </div>
