@@ -63,7 +63,6 @@ const Gallery = () => {
                 onHide={() => setModalShow(false)}
                 aria-labelledby="contained-modal-title-vcenter"
                 fullscreen
-                
                 centered
             >
                 <Carousel {...settings}>
