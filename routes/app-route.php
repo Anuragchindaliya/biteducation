@@ -125,7 +125,7 @@ $router->map('GET', '/v1/api/[*:action]/t1', function ($id) {
 
 if ($_SERVER['REQUEST_METHOD'] === "GET" && !in_array($_SERVER['REDIRECT_URL'], $allGetRoutes)) {
 
-	//search certificates download
+	//search certificates download for students
 	$router->map('GET', '/api/certificate', function () {
 		$db = app_db();
 
@@ -161,6 +161,79 @@ if ($_SERVER['REQUEST_METHOD'] === "GET" && !in_array($_SERVER['REDIRECT_URL'], 
 					'msg' => 'No records found',
 				]
 			);
+		}
+	});
+
+
+
+	//delete certificates for admin
+	$router->map('GET', '/api/delete', function () {
+		$db = app_db();
+
+		$requiredFields = ["id", "token"];
+		function validateParams($requiredFields)
+		{
+			// echo print_r($fields);
+			foreach ($requiredFields as $key) {
+				if (!isset($_GET[$key]) || is_null($_GET[$key])) {
+					echo json_encode(array(
+						'status' => 'failure',
+						'msg' => "$key is missing in params",
+						'data' => null,
+					));
+					die();
+				}
+			}
+			return true;
+		}
+
+		if (validateParams($requiredFields)) {
+			$id =  $db->CleanDBData($_GET['id']);
+			$token =  $db->CleanDBData($_GET['token']);
+			$tokenResult = $db->select("SELECT * FROM admin WHERE token = '$token'");
+			// $result = $db->select("SELECT * FROM  certificates WHERE sr_no = '$sr_no' AND adm_no = '$adm_no'");
+			if ($tokenResult) {
+				$existResult = $db->Select("SELECT * FROM certificates WHERE id = '$id'");
+
+
+				if ($existResult) {
+					$fileName = $existResult[0]['cert_path'];
+					$fields = ["id" => $id];
+					$deleteResult = $db->delete("certificates", $fields);
+
+					if ($deleteResult) {
+						// move_uploaded_file($_FILES["cert_path"]["tmp_name"], "./uploads/certificates/$file_name")
+
+						$movingResult = rename("./uploads/certificates/$fileName", "./uploads/temp_delete/$fileName");
+						if ($movingResult) {
+							echo json_encode(array(
+								'status' => 'success',
+								'msg' => 'Deleted successfully',
+							));
+						} else {
+							echo json_encode(array(
+								'status' => 'error',
+								'msg' => 'error in moving file',
+							));
+						}
+					} else {
+						echo json_encode(array(
+							'status' => 'error',
+							'msg' => 'Error in Deleting',
+						));
+					}
+				} else {
+					echo json_encode(array(
+						'status' => 'error',
+						'msg' => 'No Record Found',
+					));
+				}
+			} else {
+				echo json_encode(array(
+					'status' => 'error',
+					'msg' => 'Wrong token',
+				));
+			}
 		}
 	});
 
@@ -214,7 +287,7 @@ if ($_SERVER['REQUEST_METHOD'] === "GET" && !in_array($_SERVER['REDIRECT_URL'], 
 		}
 	});
 
-	//check login
+	//check login for admin
 	$router->map('GET', '/api/validate-token', function () {
 		$db = app_db();
 		$token = $db->CleanDBData($_GET["token"]);
@@ -240,16 +313,29 @@ if ($_SERVER['REQUEST_METHOD'] === "GET" && !in_array($_SERVER['REDIRECT_URL'], 
 		if ($result) {
 
 			$q0 = $db->select("SELECT * FROM certificates ORDER BY id DESC");
-			throwJson(
-				$q0,
-				[
+			if ($q0) {
+				echo json_encode(array(
+					'status' => 'success',
 					'msg' => count($q0) . ' records found',
-					'data' => $q0,
-				],
-				[
-					'msg' => 'No records found',
-				]
-			);
+					'data' => $q0
+				));
+			} else {
+				echo json_encode(array(
+					'status' => 'failure',
+					'msg' => 'No record found',
+				));
+			}
+			// die();
+			// throwJson(
+			// 	$q0,
+			// 	[
+			// 		'msg' => count($q0) . ' records found',
+			// 		'data' => $q0,
+			// 	],
+			// 	[
+			// 		'msg' => 'No records found',
+			// 	]
+			// );
 		} else {
 			echo json_encode(array(
 				'status' => 'failure',
@@ -415,6 +501,57 @@ if ($_SERVER['REQUEST_METHOD'] === "GET" && !in_array($_SERVER['REDIRECT_URL'], 
 		// 		}
 		// 	}
 		// }
+	});
+
+	//update cetificates
+	$router->map('POST', '/api/update-certificate', function () {
+		$db = app_db();
+		$requiredFields = ["id", "sr_no", "adm_no", "name", "father_name", "token", "created_at"];
+		function validateParams($requiredFields)
+		{
+			// echo print_r($fields);
+			foreach ($requiredFields as $key) {
+				if (!isset($_POST[$key]) || is_null($_POST[$key])) {
+					echo json_encode(array(
+						'status' => 'failure',
+						'msg' => "$key is missing in params",
+						'data' => null,
+					));
+					die();
+				}
+			}
+			return true;
+		}
+
+		if (validateParams($requiredFields)) {
+			$id =  $db->CleanDBData($_POST['id']);
+			$sr_no =  $db->CleanDBData($_POST['sr_no']);
+			$adm_no =  $db->CleanDBData($_POST['adm_no']);
+			$name =  $db->CleanDBData($_POST['name']);
+			$father_name =  $db->CleanDBData($_POST['father_name']);
+
+			$token = $db->CleanDBData($_POST["token"]);
+			$valid_token = $db->select("SELECT * FROM admin WHERE token = '$token'");
+			if ($valid_token) {
+				$cert_result = $db->Update("certificates", ["sr_no" => $sr_no, "adm_no" => $adm_no, "name" => $name, "father_name" => $father_name], ["id" => $id]);
+				if ($cert_result) {
+					echo json_encode(array(
+						'status' => 'success',
+						'msg' => 'Data updated',
+					));
+				} else {
+					echo json_encode(array(
+						'status' => 'failure',
+						'msg' => "file is not uploaded",
+					));
+				}
+			} else {
+				echo json_encode(array(
+					'status' => 'failure',
+					'msg' => 'Not valid token',
+				));
+			}
+		}
 	});
 
 	//upload cetificates
