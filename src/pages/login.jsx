@@ -36,9 +36,9 @@ const Login = () => {
                 if (result.status === "success") {
                     localStorage.setItem("token", "");
                     setUserLogin(false);
-                    toast("Logout")
+                    toast.success("Logout")
                 } else {
-                    console.log("can't logout")
+                    toast.error("Can't logout")
                 }
             });
     }

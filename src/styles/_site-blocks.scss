@@ -79,7 +79,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: #412876;
+      background: $primary;
       opacity: 0.9;
       z-index: 0;
     }
@@ -459,7 +459,7 @@
 
 .footer {
   padding: 4rem 0;
-  background: #412875;
+  background: $primary;
   font-size: 14px;
   color: $white;
   .footer-heading {
@@ -496,7 +496,7 @@
   &:before {
     position: absolute;
     content: "";
-    background: #412875;
+    background: #580707;
     opacity: 0.7;
     z-index: 1;
     top: 0;

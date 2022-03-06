@@ -24,7 +24,7 @@ const Footer = () => {
                     <div className="col-lg-3">
                         <h3 className="footer-heading"><span>Our Courses</span></h3>
                         <ul className="list-unstyled">
-                            {courses.slice(0,5).map((course, i) => (<li key={i}><Link to={`/courses#${course.title}`}>{course.title}</Link></li>))}
+                            {courses.slice(0, 5).map((course, i) => (<li key={i}><Link to={`/courses#${course.title.replaceAll(" ", "-").toLowerCase()}`}>{course.title}</Link></li>))}
                         </ul>
                     </div>
                     <div className="col-lg-3">

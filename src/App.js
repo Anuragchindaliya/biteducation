@@ -15,6 +15,8 @@ import {
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import Gallery from "./pages/gallery";
+import { ADCA, DCA, BCC, CCC, Tally, DCTT } from "./components/courses";
+import { courses } from "./pages/api/courses";
 function App() {
   return (
     <>
@@ -41,6 +43,33 @@ function App() {
           </Route>
           <Route path="/gallery">
             <Gallery />
+          </Route>
+          {/* {courses.map((course, i) => (
+            <Route
+              key={i}
+              path={course.title.replaceAll(" ", "-").toLowerCase()}
+            >
+              <ADCA />
+            </Route>
+          ))} */}
+          {/* courses */}
+          <Route path="/adca">
+            <ADCA />
+          </Route>
+          <Route path="/dca">
+            <DCA />
+          </Route>
+          <Route path="/bcc">
+            <BCC />
+          </Route>
+          <Route path="/ccc">
+            <CCC />
+          </Route>
+          <Route path="/tally">
+            <Tally />
+          </Route>
+          <Route path="/dctt">
+            <DCTT />
           </Route>
         </Switch>
         <Footer />

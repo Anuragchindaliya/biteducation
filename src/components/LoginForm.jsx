@@ -16,10 +16,10 @@ const LoginForm = ({ setUserLogin, toast }) => {
                     localStorage.setItem("token", result.data.token);
                     localStorage.setItem("id", result.data.id);
                     setUserLogin(true)
-                    toast("Login")
+                    toast.success("Login")
 
                 } else {
-                    toast("wrong credentials")
+                    toast.error("wrong credentials")
 
                 }
             });

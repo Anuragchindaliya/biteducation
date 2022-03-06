@@ -1,4 +1,4 @@
-$primary: #ff4136;
+$primary: #580707;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
@@ -37,4 +37,21 @@ $primary: #ff4136;
 }
 .carousel-control-next {
   background: linear-gradient(to left, #000 0%, #00000000 100%);
+}
+.single-course {
+  h2,
+  strong,
+  u {
+    color: $primary;
+  }
+  table {
+    border: 1px solid $primary;
+    gap: 3px;
+    tr {
+      border-bottom: 1px solid $primary;
+    }
+    td {
+      padding: 8px;
+    }
+  }
 }

@@ -15,7 +15,7 @@ const Dashboard = ({ toast }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (state.sr_no === "" && state.adm_no === "" && state.name === "" && state.father_name === "" && state.cert_file.length === 0) {
-            toast("Required field is missing")
+            toast.error("Required field is missing")
         } else {
             const formData = new FormData();
             formData.append("sr_no", state.sr_no);
@@ -29,12 +29,12 @@ const Dashboard = ({ toast }) => {
                 .then((result) => {
                     if (result.status === "success") {
                         setState({ sr_no: "", name: "", father_name: "", adm_no: "", cert_file: [] })
-                        toast("certificate uploaded");
+                        toast.success("Certificate Uploaded");
                         e.target.reset();
                         fetchCertificate();
 
                     } else {
-                        toast("Error in uploading")
+                        toast.error("Error in uploading")
 
                     }
                 });
@@ -48,7 +48,7 @@ const Dashboard = ({ toast }) => {
             if (result.status === "success") {
                 setCertificates(result.data)
             } else {
-                toast("No Certificates")
+                toast.info("No Certificates")
             }
         })
 
@@ -59,7 +59,6 @@ const Dashboard = ({ toast }) => {
     const handleEditModal = (currentData) => {
         setEditModalStatus(true);
         setEditData(currentData);
-        console.log(currentData)
     }
 
     const handleEdit = (e) => {
@@ -78,11 +77,11 @@ const Dashboard = ({ toast }) => {
             .then((result) => {
                 if (result.status === "success") {
                     setState({ sr_no: "", name: "", father_name: "", adm_no: "", cert_file: [] })
-                    toast("certificate updated");
+                    toast.success("Certificate Updated");
                     fetchCertificate();
                     e.target.reset();
                 } else {
-                    toast("Error in uploading")
+                    toast.error("Error in uploading")
                 }
                 setEditModalStatus(false);
             });
@@ -96,9 +95,9 @@ const Dashboard = ({ toast }) => {
         const token = localStorage.getItem("token");
         fetch(`http://web2rise.q2w.in:100/bitapi/api/delete?id=${deleteData.id}&token=${token}`).then((res) => res.json()).then((result) => {
             if (result.status === "success") {
-                toast("Deleted Successfully")
+                toast.success("Deleted Successfully")
             } else {
-                toast("Error in Deleting")
+                toast.error("Error in Deleting")
             }
             setDeleteModalStatus(false);
             fetchCertificate()
@@ -140,7 +139,7 @@ const Dashboard = ({ toast }) => {
                     </div>
                 </form>
                 <div className="col-md-8 offset-md-1 overflow-auto ">
-                    <h3 className="section-title-underline text-center"><span>All Certificate </span></h3>
+                    <h3 className="section-title-underline text-center"><span>All Certificates </span></h3>
                     <table className="table ">
                         <thead>
                             <tr>
@@ -150,7 +149,7 @@ const Dashboard = ({ toast }) => {
                                 <th scope="col">Serial No.</th>
                                 <th scope="col">Admission No.</th>
                                 <th scope="col">Certificate</th>
-                                <th>Actions</th>
+                                {/* <th>Actions</th> */}
                             </tr>
                         </thead>
                         <tbody>
@@ -162,10 +161,10 @@ const Dashboard = ({ toast }) => {
                                     <td>{crt.sr_no}</td>
                                     <td>{crt.adm_no}</td>
                                     <td><a target="_blank" download="BitEducation-certificate" href={"http://localhost/bitapi/uploads/certificates/" + crt.cert_path} rel="noreferrer">Download</a></td>
-                                    <td>
+                                    {/* <td>
                                         <button className='btn btn-primary mr-2' onClick={() => handleEditModal(crt)}>Edit</button>
                                         <button className='btn btn-primary' onClick={() => handleDeleteModal(crt.id)}>Delete</button>
-                                    </td>
+                                    </td> */}
                                 </tr>
                             )) : <tr><td colSpan={7} align="center"><h2>No Record Availabel</h2></td></tr>}
                         </tbody>

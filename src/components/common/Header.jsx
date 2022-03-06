@@ -42,13 +42,13 @@ const Header = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-8 d-none d-lg-block">
-              <Link to="/contact" className="small mr-3">
+              <Link to="/contact" className="small mr-3 text-white">
                 <span className=" mr-2"><BsQuestionCircle /></span> Have a questions?
               </Link>
-              <a href="#/" className="small ml-3">
+              <a href="tel:+91-8287166159" className="small ml-3 text-white">
                 <span><BsTelephoneFill /></span> 8287166159
               </a>
-              <a href="#/" className="small ml-3">
+              <a href="mailto:bitcomputer007@gmail.com" className="small ml-3 text-white ">
                 <span className="mr-2"><BsEnvelope /></span> bitcomputer007@gmail.com
               </a>
             </div>
@@ -69,14 +69,14 @@ const Header = () => {
                 <img src="./assets/images/BIT-LOGO-600.png" alt="logo" className="img-fluid" width="100px" height="30px" />
               </Link>
             </div>
-            <div className="mr-auto">
+            <div className="ml-auto">
               <nav className="site-navigation position-relative text-right" role="navigation">
                 <ul className="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                   {menus.map((menu, i) => (<Nav key={i} href={menu.link} title={menu.title} />))}
                 </ul>
               </nav>
             </div>
-            <div className="ml-auto">
+            <div className="">
               <div className="social-wrap">
                 <a href="#/"><span><FaFacebookF /></span> </a>
                 <a href="#/"><span ><FaTwitter /></span></a>

@@ -16,10 +16,6 @@ export const menus = [
     link: "/gallery",
   },
   {
-    title: "Download Certificate",
-    link: "/downloadCertificate",
-  },
-  {
     title: "Contact Us",
     link: "/contact",
   },

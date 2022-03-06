@@ -143,7 +143,7 @@ export default function Home() {
         </div>
       </div>
       {/* our Philosphy */}
-      <Services />
+      {/* <Services /> */}
       <Cta />
       <Testimonials />
       {/* news updates */}
