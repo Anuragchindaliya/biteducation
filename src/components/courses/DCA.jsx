@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Layout from './Layout';
 
 const DCA = () => {
     return (
@@ -114,4 +115,4 @@ const DCA = () => {
     )
 }
 
-export default DCA
+export default Layout(DCA);

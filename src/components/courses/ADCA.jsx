@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Layout from './Layout'
 const ADCA = () => {
     return (
         <div className='container single-course mb-5 mt-sm-5'>
@@ -297,4 +297,4 @@ const ADCA = () => {
     )
 }
 
-export default ADCA
+export default Layout(ADCA);

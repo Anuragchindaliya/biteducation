@@ -1,5 +1,5 @@
 import React from 'react'
-import { Carousel } from 'react-bootstrap'
+import { Carousel } from 'react-bootstrap';
 
 const BannerSliders = () => {
 
@@ -11,32 +11,30 @@ const BannerSliders = () => {
         fade: true,
         nextIcon
     }
+    const images = [
+        "assets/banner/ccc.jpg",
+        "assets/banner/banner-2.jpg",
+        "assets/banner/banner2.jpg",
+        "assets/banner/teachers.jpg",
+        "assets/banner/learning.jpg",
+        "assets/banner/studying.jpg",
+        "assets/banner/manyta.jpg",
+        "assets/banner/website-design.jpg",
+        "assets/banner/all-computer.jpg",
+        "assets/banner/learn-computer.jpg",
+        "assets/banner/our-courses.jpg",
+
+    ]
     return (
         <div className='site-section mt-5 mt-sm-5'>
             <Carousel {...settings}>
-                <Carousel.Item>
+                {images.map((img, idx) => (<Carousel.Item key={idx}>
                     <img
                         className="d-block w-100"
-                        src="assets/images/ccc.jpg"
+                        src={img}
                         alt="First slide"
                     />
-
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="assets/images/banner-2.jpg"
-                        alt="Second slide"
-                    />
-
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="assets/images/banner2.jpg"
-                        alt="Third slide"
-                    />
-                </Carousel.Item>
+                </Carousel.Item>))}
             </Carousel>
         </div>
     )

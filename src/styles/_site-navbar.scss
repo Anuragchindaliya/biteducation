@@ -58,7 +58,6 @@
           padding-right: 20px;
           &:before {
             position: absolute;
-            content: "\e313";
             font-size: 16px;
             top: 50%;
             right: 0;
@@ -124,7 +123,7 @@
               padding: 9px 20px;
               display: block;
               &:hover {
-                background: lighten($gray-400, 2%);
+                background: $primary;
                 color: $gray-100;
               }
             }
@@ -262,7 +261,7 @@
 
     a {
       padding: 10px 20px;
-      display: block;
+      display: inline-block;
       position: relative;
       color: $gray-900;
       &:hover {
@@ -365,7 +364,7 @@
 
 .sticky-wrapper {
   position: absolute;
-  z-index: 100;
+  z-index: 2;
   width: 100%;
   background: $white;
 

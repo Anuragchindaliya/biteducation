@@ -128,9 +128,12 @@ export default function Home() {
             </div>
           </div>
           <div className="row">
-            {courses.slice(0, 3).map((course, i) => (
-              <CourseCard key={i} course={course} />
-            ))}
+            {courses
+              .filter((course) => course.url)
+              .slice(0, 6)
+              .map((course, i) => (
+                <CourseCard key={i} course={course} />
+              ))}
           </div>
           <div className="row justify-content-center">
             <Link
@@ -145,7 +148,7 @@ export default function Home() {
       {/* our Philosphy */}
       {/* <Services /> */}
       <Cta />
-      <Testimonials />
+      {/* <Testimonials /> */}
       {/* news updates */}
       {/* <div className="news-updates">
         <div className="container">

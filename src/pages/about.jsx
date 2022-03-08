@@ -13,7 +13,7 @@ const About = () => {
         {
             title: "Director Message",
             descriptions: ["The Software industry has witnessed rapid growth in recent years. Personal computers are now being virtually in every office and corporate sector.", "With the increase in machines, the industry has demanded professionals to work with computers. Therefore the industry has commanded a greater demand for trained and skilled software, data management and networking experts to cater to this ever increasing need to support. We are here to create an institution that can make people self dependent in the era of ever increasing unemployment.So come, join us and enter the world of computer professionals and get into the most demanded trade today and tomorrow."],
-            img: "./assets/images/bheem-raj.jpg",
+            img: "./assets/images/bheem-raj.jpeg",
             imgPos: "left"
         },
         {
@@ -57,7 +57,7 @@ const About = () => {
                         </span>
                         <h3 className='text-primary'>Mission</h3>
                         <p>
-                            Provide every student with a platform to refine his/ her skills and make a mark in the computer literate world. To sharpen one's skill and master new technologies and establish itself with a mission of “Bringing People and Computers Together Successfully”
+                        Our mission is to provide a safe and supportive learning environment with opportunities for each student to develop the technical skills &amp; knowledge to become a social, responsible and successful citizen of India
                         </p>
                     </div>
                     <div className="col-lg-4 col-md-6 mb-5 mb-lg-0">
@@ -66,7 +66,7 @@ const About = () => {
                         </span>
                         <h3 className='text-primary'>Vision</h3>
                         <p>
-                            BCE looks forward to being a recognized Model Private Computer Training Institute in the Country in meeting the prevailing needs of technical manpower through quality, efficient and resourceful training.
+                        Creation of Human Resource pool with spectrum of technical competencies, while ensuring universal access to serve as an instrument of bringing about technological transformation.
                         </p>
                     </div>
                     <div className="col-lg-4 col-md-6 mb-5 mb-lg-0">
@@ -89,105 +89,6 @@ const About = () => {
 
             {/* <Services /> */}
             {/* our teacher section */}
-            <div className="site-section">
-                <div className="container">
-                    <div className="row mb-5 justify-content-center text-center">
-                        <div className="col-lg-4 mb-5">
-                            <h2 className="section-title-underline mb-5">
-                                <span>Our Teachers</span>
-                            </h2>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
-                            <div className="feature-1 border person text-center">
-                                <div>
-                                    <img src="./assets/images/person_1.jpg" alt="person 1" className="img-fluid"
-                                    />
-                                </div>
-
-                                <div className="feature-1-content">
-                                    <h2>Craig Daniel</h2>
-                                    <span className="position mb-3 d-block">Math Teacher</span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
-                            <div className="feature-1 border person text-center">
-                                <div>
-                                    <img src="./assets/images/person_2.jpg" alt="person 2" className="img-fluid"
-                                    />
-                                </div>
-                                <div className="feature-1-content">
-                                    <h2>Taylor Simpson</h2>
-                                    <span className="position mb-3 d-block">Math Teacher</span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
-                            <div className="feature-1 border person text-center">
-                                <div>
-                                    <img src="./assets/images/person_3.jpg" alt=" 23" className="img-fluid"
-
-                                    />
-                                </div>
-                                <div className="feature-1-content">
-                                    <h2>Jonas Tabble</h2>
-                                    <span className="position mb-3 d-block">Math Teacher</span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
-                            <div className="feature-1 border person text-center">
-                                <div>
-                                    <img src="./assets/images/person_4.jpg" alt=" 23" className="img-fluid"
-
-                                    />
-                                </div>
-                                <div className="feature-1-content">
-                                    <h2>Craig Daniel</h2>
-                                    <span className="position mb-3 d-block">Math Teacher</span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
-                            <div className="feature-1 border person text-center">
-                                <div>
-                                    <img src="./assets/images/person_1.jpg" alt=" 23" className="img-fluid"
-
-                                    />
-                                </div>
-                                <div className="feature-1-content">
-                                    <h2>Taylor Simpson</h2>
-                                    <span className="position mb-3 d-block">Math Teacher</span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mb-5 mb-lg-5">
-                            <div className="feature-1 border person text-center">
-                                <div>
-                                    <img src="./assets/images/person_1.jpg" alt=" 23" className="img-fluid"
-
-                                    />
-                                </div>
-                                <div className="feature-1-content">
-                                    <h2>Jonas Tabble</h2>
-                                    <span className="position mb-3 d-block">Math Teacher</span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
             <Cta />
         </>
     )

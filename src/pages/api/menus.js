@@ -7,9 +7,40 @@ export const menus = [
     title: "About Us",
     link: "/about",
   },
+
   {
     title: "Our Courses",
     link: "/courses",
+    children: [
+      {
+        title: "ADCA",
+        url: "/adca",
+      },
+      {
+        title: "BCC",
+        url: "/bcc",
+      },
+      {
+        title: "CCC",
+        url: "/ccc",
+      },
+      {
+        title: "DCA",
+        url: "/dca",
+      },
+      {
+        title: "DCTT",
+        url: "/dctt",
+      },
+      {
+        title: "Tally",
+        url: "/tally",
+      },
+    ],
+  },
+  {
+    title: "Other Services",
+    link: "/services",
   },
   {
     title: "Our Gallery",

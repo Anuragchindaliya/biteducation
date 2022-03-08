@@ -34,7 +34,7 @@ const Header = () => {
         </div>
         <div className="site-mobile-menu-body">
           <ul className="site-nav-wrap">
-            {menus.map((menu, i) => (<Nav key={i} href={menu.link} title={menu.title} mob />))}
+            {menus.map((menu, i) => (<Nav key={i} href={menu.link} {...menu} mob />))}
           </ul>
         </div>
       </div>
@@ -72,7 +72,7 @@ const Header = () => {
             <div className="ml-auto">
               <nav className="site-navigation position-relative text-right" role="navigation">
                 <ul className="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                  {menus.map((menu, i) => (<Nav key={i} href={menu.link} title={menu.title} />))}
+                  {menus.map((menu, i) => (<Nav key={i} href={menu.link} {...menu} />))}
                 </ul>
               </nav>
             </div>

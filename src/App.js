@@ -17,6 +17,8 @@ import Footer from "./components/common/Footer";
 import Gallery from "./pages/gallery";
 import { ADCA, DCA, BCC, CCC, Tally, DCTT } from "./components/courses";
 import { courses } from "./pages/api/courses";
+import InterLinking from "./components/common/InterLinking";
+import OurServices from "./pages/ourServices";
 function App() {
   return (
     <>
@@ -43,6 +45,9 @@ function App() {
           </Route>
           <Route path="/gallery">
             <Gallery />
+          </Route>
+          <Route path="/services">
+            <OurServices />
           </Route>
           {/* {courses.map((course, i) => (
             <Route

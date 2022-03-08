@@ -1,5 +1,25 @@
 export const courses = [
   {
+    title: "Advance Diploma course in Computer Application",
+    descriptions: [
+      "Basic fundamental, MS Paint, Keyboard Keys, Microsoft Word, Microsoft Excel,   Microsoft Power Point, File Management, Desktop Editing, Shortcut Keys. Internet:- Searching information and images, Prepare file & Project,  Printout, Create & sending email etc.",
+    ],
+    img: "./assets/images/advanced-diploma-in-computer-applications-adca.jpg",
+    imgPos: "right",
+    url: "/adca",
+    duration: "2 Months",
+  },
+  {
+    title: "Diploma in Computer Teacher Training",
+    descriptions: [
+      "Basic fundamental, MS Paint, Keyboard Keys, Microsoft Word, Microsoft Excel,   Microsoft Power Point, File Management, Desktop Editing, Shortcut Keys. Internet:- Searching information and images, Prepare file & Project,  Printout, Create & sending email etc.",
+    ],
+    img: "./assets/images/dctt-bit.jpg",
+    imgPos: "right",
+    url: "/dctt",
+    duration: "2 Months",
+  },
+  {
     title: "Course on Computer Concepts",
     descriptions: [
       "Basic fundamental, MS Paint, Keyboard Keys, Microsoft Word, Microsoft Excel,   Microsoft Power Point, File Management, Desktop Editing, Shortcut Keys. Internet:- Searching information and images, Prepare file & Project,  Printout, Create & sending email etc.",

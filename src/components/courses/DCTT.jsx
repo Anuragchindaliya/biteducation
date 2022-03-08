@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Layout from './Layout';
 
 const DCTT = () => {
     return (
@@ -284,4 +285,4 @@ const DCTT = () => {
     )
 }
 
-export default DCTT
+export default Layout(DCTT);
