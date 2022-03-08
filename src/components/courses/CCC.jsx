@@ -4,7 +4,7 @@ import Layout from './Layout';
 const CCC = () => {
     return (
         <div className='container single-course mb-5 mt-sm-5'>
-            <p><strong>CCC Course:</strong></p>
+            <h2><u>CCC Course:</u></h2>
             <p>➥ CCC Course is a Computer Concepts Certificate.&nbsp;It is designed to aim at imparting a basic level IT Literacy program. This program gives an opportunity to the common man to attain computer literacy and gain computer knowledge and Information Technology. This is the literacy program available online throughout the year. After completing this course aspirants should be able to use the computer for basic purposes.</p>
             <p>➥ Aspirants can do personal or business letters, using the internet, preparing presentations, receiving and sending mails,&nbsp; preparing some small databases, etc. With the help of this literacy program, they can build some small business communities, housewives, etc. to maintain their small accounts using the system. In the world of Information Technology (IT) it must be to know about the basic knowledge of computers.</p>
             <h3><strong>CCC Course Overview:</strong></h3>

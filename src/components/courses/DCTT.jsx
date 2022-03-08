@@ -4,7 +4,7 @@ import Layout from './Layout';
 const DCTT = () => {
     return (
         <div className='container single-course mb-5 mt-sm-5'>
-            <h4><u><u>DCTT (Diploma in Computer Teacher Training) Course:</u></u></h4>
+            <h2><u>DCTT (Diploma in Computer Teacher Training) Course:</u></h2>
             <p>Diploma in Computer Teacher Training (DCTT Course) is an Information Technology computer science course. DCTT Course mostly focuses on the basic and fundamental aspects of the computer both for teaching and training purposes. Diploma in Computer Teacher Training Course (DCTT Course) prepares the candidates for a specialized career in the Teaching and Training field. The contents of this DCTT Course is designed in such a way that it not only provides the candidate computer knowledge but also allow them to learn how to transfer this knowledge to their students effectively. The duration of the DCTT course is one year and the course is divided into four modules.</p>
             <p>Modules:</p>
             <ul>

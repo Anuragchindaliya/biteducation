@@ -12,9 +12,6 @@ const BannerSliders = () => {
         nextIcon
     }
     const images = [
-        "assets/banner/ccc.jpg",
-        "assets/banner/banner-2.jpg",
-        "assets/banner/banner2.jpg",
         "assets/banner/teachers.jpg",
         "assets/banner/learning.jpg",
         "assets/banner/studying.jpg",
@@ -23,6 +20,9 @@ const BannerSliders = () => {
         "assets/banner/all-computer.jpg",
         "assets/banner/learn-computer.jpg",
         "assets/banner/our-courses.jpg",
+        "assets/banner/ccc.jpg",
+        "assets/banner/banner-2.jpg",
+        "assets/banner/banner2.jpg",
 
     ]
     return (

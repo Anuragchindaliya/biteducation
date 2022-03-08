@@ -159,14 +159,6 @@ const OurServices = () => {
                                 <CourseCard key={i} course={course} />
                             ))}
                     </div>
-                    <div className="row justify-content-center">
-                        <Link
-                            to={"/courses"}
-                            className="btn btn-primary rounded-0 px-4 text-white"
-                        >
-                            View all Courses
-                        </Link>
-                    </div>
                 </div>
             </div>
         </div>

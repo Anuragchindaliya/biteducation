@@ -4,6 +4,7 @@ import Layout from './Layout';
 const BCC = () => {
     return (
         <div className='container single-course mb-5 mt-sm-5'>
+            <h2><u>BCC Course:</u></h2>
             <p><strong>BCC&nbsp;</strong>is a&nbsp;Basic Computer Course. offered by the National Institute of Electronics &amp; Information Technology (NIEIT) Offers basic computer training to be skilled in the computer for Personal and Professional use. After completing this course one can get certified for various examinations as a plus certification of the&nbsp;<u>BCC Course</u>.</p>
             <h2><u>Basic Computer Course:</u></h2>
             <ul>

@@ -58,9 +58,3 @@ $primary: #580707;
 .rotate-180 {
   transform: rotate(180deg);
 }
-.submenu-icon {
-  &:hover {
-    background-color: $primary;
-    color: white;
-  }
-}

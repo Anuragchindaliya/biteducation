@@ -3,7 +3,9 @@ import Layout from './Layout'
 const Tally = () => {
     return (
         <div className="container single-course mb-5 mt-sm-5">
-            <p><strong>Tally Course:</strong>&nbsp;Tally Stands for Transactions Allowed in a Linear Line Yards. A tally is basically a computer software which is widely used for accounting purposes by small and large scale industries It is an accounting software where all the Banking &amp; Auditing, Accounting works are done with the help of the software. The Tally Course is of 3 months regular-based course.</p>
+            <h2><u>Tally Course:</u></h2>
+            <p>
+                Tally Stands for Transactions Allowed in a Linear Line Yards. A tally is basically a computer software which is widely used for accounting purposes by small and large scale industries It is an accounting software where all the Banking &amp; Auditing, Accounting works are done with the help of the software. The Tally Course is of 3 months regular-based course.</p>
             <p>The&nbsp;<u>Tally Course</u>&nbsp;eligibility criteria is-candidate have to be 10+2 with a qualified aggregate/have a basic knowledge of business management/graduate from the commerce field. After completing the Tally Course, the applicants get open to countless job opportunities like admin executives, account executives, audit executives, and many more.</p>
             <p>Here we are going to spell you out about Tally Course with the complete information that is applicable for the&nbsp; Course. This article will help you to gain knowledge about its fee structure, what are its uses, career in Tally, and many more.</p>
             <p><strong>"Get the complete details of Tally Course introduction, Tally Course Duration, Tally Course Syllabus, Tally Course Subjects, Tally Course Timing, Tally Course Admission, Tally Course Institutes &amp; Jobs."</strong></p>

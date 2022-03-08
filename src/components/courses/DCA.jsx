@@ -4,7 +4,7 @@ import Layout from './Layout';
 const DCA = () => {
     return (
         <div className='container single-course mb-5 mt-sm-5'>
-            <h3>DCA Course Overview:</h3>
+            <h2><u>DCA Course Overview</u>:</h2>
             <p>➨&nbsp;<strong>DCA Full Form -</strong>&nbsp;Diploma in Computer Applications</p>
             <p>➨&nbsp;<strong>DCA Duration -</strong>&nbsp;6 Months to 1 Year.</p>
             <p>➨&nbsp;<strong>DCA Eligibility -&nbsp;</strong>10+2 (Intermediate)</p>
