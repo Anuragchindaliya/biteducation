@@ -36,6 +36,10 @@ export const menus = [
         title: "Tally",
         url: "/tally",
       },
+      {
+        title: "AutoCad",
+        url: "/autocad",
+      },
     ],
   },
   {

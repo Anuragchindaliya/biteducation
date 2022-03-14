@@ -17,13 +17,6 @@ export default function Home() {
       {/* feature */}
       <div className="site-section">
         <div className="container">
-          <div className="row mb-5 justify-content-center text-center">
-            <div className="col-lg-4 mb-5">
-              <h2 className="section-title-underline mb-5">
-                <span>Why Academics Works</span>
-              </h2>
-            </div>
-          </div>
           <div className="row">
             <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
               <div className="feature-1 border">
@@ -93,11 +86,10 @@ export default function Home() {
             </div>
             <div className="col-lg-8">
               <p className="lead">
-                BIT Computer Education is an Accredited By Nielit Under MCIT
-                (Ministry OF Communication and Information Technology) Govt. Of
-                India. BIT has been established with a primary objective to
-                enhance the skills of the youth of India at Affordable Fee to
-                meet the growing demands of modern industrialization.
+                BIT Computer Education & services has been established with a
+                primary objective to enhance the skills of the youth of India at
+                Affordable Fee to meet the growing demands of modern
+                industrialization.
               </p>
               <p className="lead">
                 Even though the central and state Governments have made

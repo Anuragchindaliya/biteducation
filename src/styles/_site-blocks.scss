@@ -452,7 +452,7 @@
       }
     }
     .desc {
-      font-size: 15px;
+      font-size: 19px;
     }
   }
 }
@@ -506,7 +506,7 @@
   }
   > .container {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     h2,
     p {
       color: $white;

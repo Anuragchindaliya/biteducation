@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react'
+import weburl from '../config';
 import Breadcrumb from '../components/common/Breadcrumb';
 import Jumbotron from '../components/common/Jumbotron';
 
@@ -10,7 +11,7 @@ const DownloadCertificate = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const { sr_no, adm_no } = state;
-        fetch(`http://web2rise.q2w.in:100/bitapi/api/certificate?sr_no=${sr_no}&adm_no=${adm_no}`)
+        fetch(`${weburl}/api/certificate?sr_no=${sr_no}&adm_no=${adm_no}`)
             .then((res) => res.json())
             .then((result) => {
                 if (result.status === "success") {

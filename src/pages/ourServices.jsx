@@ -7,157 +7,109 @@ import CourseCard from '../components/CourseCard'
 const OurServices = () => {
     const services = [
         {
-            title: "Advance Diploma course in Computer Application",
+            title: "LAPTOP REPAIRING",
             descriptions: [
-                "Basic fundamental, MS Paint, Keyboard Keys, Microsoft Word, Microsoft Excel,   Microsoft Power Point, File Management, Desktop Editing, Shortcut Keys. Internet:- Searching information and images, Prepare file & Project,  Printout, Create & sending email etc.",
+                "सभी प्रकार के कंप्यूटर व लैपटॉप रिपेयर किये जाते हैं|",
             ],
-            img: "./assets/images/advanced-diploma-in-computer-applications-adca.jpg",
+            img: "./assets/services/computer-repair.png",
             imgPos: "right",
-          
+
             duration: "2 Months",
         },
         {
-            title: "Diploma in Computer Teacher Training",
+            title: "LAPTOP SALE & PURCHASE",
             descriptions: [
-                "Basic fundamental, MS Paint, Keyboard Keys, Microsoft Word, Microsoft Excel,   Microsoft Power Point, File Management, Desktop Editing, Shortcut Keys. Internet:- Searching information and images, Prepare file & Project,  Printout, Create & sending email etc.",
+                "पुराने लैपटॉप उचित रेट पर खरीदें व बेचे जाते हैं।",
             ],
-            img: "./assets/images/dctt-bit.jpg",
+            img: "./assets/services/laptop.jpeg",
             imgPos: "right",
-         
+
             duration: "2 Months",
         },
         {
-            title: "Course on Computer Concepts",
+            title: "COMPUTER & LAPTOP PARTS",
             descriptions: [
-                "Basic fundamental, MS Paint, Keyboard Keys, Microsoft Word, Microsoft Excel,   Microsoft Power Point, File Management, Desktop Editing, Shortcut Keys. Internet:- Searching information and images, Prepare file & Project,  Printout, Create & sending email etc.",
+                "कम्प्यूटर व लैपटॉप का नया तथा पुराना सामान दिल्ली रेट पर मिलता है।",
             ],
-            img: "./assets/images/ccc-course.png",
+            img: "./assets/services/computer-accessories.jpg",
             imgPos: "right",
-         
+
             duration: "2 Months",
         },
         {
-            title: "Diploma in Computer Application",
+            title: "PASSPORT CONSULTANCY",
             descriptions: [
-                "Basic fundamental, MS Paint, Keyboard Keys, Microsoft Word, Microsoft Excel,   Microsoft Power Point, File Management, Desktop Editing, Shortcut Keys. Internet:- Searching information and images, Prepare file & Project,  Printout, Create & sending email etc.",
+                "पासपार्ट बनवायें मात्र 25 दिन में|",
             ],
-            img: "./assets/images/dca-diploma-in-computer-application-course-500x500.jpg",
+            img: "./assets//services/passport1.jpg",
             imgPos: "left",
-       
+
             duration: "2 Months",
         },
         {
-            title: "TALLY ERP 9",
+            title: "AADHAR CARD",
             descriptions: [
-                "Basic fundamental of Accounting, Entries in Register, Company information, create delete and alteration of company, Accounting information: Groups and Ledger. Accounting Voucher:- Contra, Payment, Receipt, Sale, Purchase, Journal, Debit Note, Credit Note. Inventory:- Stock Group, Units of Measure, Stock item. GST (Goods and Service Tax):- Sale bill, Purchase Bill.  Balance Sheet, Inventory Report, Profit & Loss A/c. Statement of Account, Tax deduction at source (TDS). Payroll:- Employee Group, Pay head, Employees, Salary detail, Payroll Voucher. Basic knowledge of internet.",
+                "आधार कार्ड प्रिंट करके लेमिनेशन करवाएं|",
             ],
-            img: "./assets/images/tally-erp-9-500x500.png",
+            img: "./assets/services/product-jpeg.jpeg",
             imgPos: "right",
-         
+
             duration: "3 Months",
         },
         {
-            title: "Javascript",
+            title: "स्कूल व कॉलेज प्रौजेक्ट।",
             descriptions: [
-                "Basic fundamental, MS Paint, Keyboard Keys, Microsoft Word, Microsoft Excel,   Microsoft Power Point, File Management, Desktop Editing, Shortcut Keys. Internet:- Searching information and images, Prepare file & Project,  Printout, Create & sending email etc.",
+                "सभी प्रकार के कॉलेज व स्कूल के प्रोजेक्ट बनाये जाते हैं|",
             ],
-            img: "./assets/images/js.png",
+            img: "./assets/services/college-project-reports.jpg",
             imgPos: "left",
             duration: "2 Months",
         },
         {
-            title: "C++ Programming",
+            title: "ऐफिडेविट",
             descriptions: [
-                "Basic fundamental, MS Paint, Keyboard Keys, Microsoft Word, Microsoft Excel,   Microsoft Power Point, File Management, Desktop Editing, Shortcut Keys. Internet:- Searching information and images, Prepare file & Project,  Printout, Create & sending email etc.",
+                "सभी प्रकार के ऐफिडेविट बनवाये जाते हैं|",
             ],
-            img: "./assets/images/c++.jpeg",
+            img: "./assets/services/affidavit.jpg",
             imgPos: "right",
             duration: "2 Months",
         },
         {
-            title: "CorelDRAW Logo Design",
+            title: "Govt. JOB",
             descriptions: [
-                "Basic fundamental, MS Paint, Keyboard Keys, Microsoft Word, Microsoft Excel,   Microsoft Power Point, File Management, Desktop Editing, Shortcut Keys. Internet:- Searching information and images, Prepare file & Project,  Printout, Create & sending email etc.",
+                "सरकारी व प्राइवेट नौकरी के ऑनलाइन फॉर्म भरे जाते हैं|",
             ],
-            img: "./assets/images/CorelDraw-Course-and-Training.jpg",
+            img: "./assets/services/sarkari-jobs.jpg",
             imgPos: "left",
             duration: "2 Months",
         },
         {
-            title: "AutoCAD",
+            title: "प्रिंट व लेमिनेशन ",
             descriptions: [
-                "Basic fundamental, MS Paint, Keyboard Keys, Microsoft Word, Microsoft Excel,   Microsoft Power Point, File Management, Desktop Editing, Shortcut Keys. Internet:- Searching information and images, Prepare file & Project,  Printout, Create & sending email etc.",
+                "कलर व B&W प्रिंट निकाले जाते हैं| ",
             ],
-            img: "./assets/images/Best-AutoCAD-Training-Institute-in-faridabad.jpg",
+            img: "./assets/services/lemination.webp",
             imgPos: "right",
             duration: "2 Months",
-        },
-        {
-            title: "BASIC COMPUTER COURSE",
-            descriptions: [
-                "Basic fundamental, MS Paint, Keyboard Keys, Microsoft Word, Microsoft Excel,   Microsoft Power Point, File Management, Desktop Editing, Shortcut Keys. Internet:- Searching information and images, Prepare file & Project,  Printout, Create & sending email etc.",
-            ],
-            img: "./assets/images/basic-computer.jpg",
-            imgPos: "left",
-            url: "/bcc",
-            duration: "2 Months",
-        },
-        {
-            title: "Photoshop",
-            descriptions: [
-                "Opening new files, existing files, exploring the toolbox, Application Bar, Exploring panels & Menus, creating & viewing a new document. Zooming & panning an image rulers, guides undoing, steps with history , color correction, understanding pixels & resolution, Cropping & straightening an image, adjusting canvas size and canvas rotation. Elliptical marquee tool, using magic wand & free hand tool, combining selection, magnetic polygonal lasso tool. Quick selection & refine edge, modify selection, understanding the background layer. Creating, selecting, linking & deleting layers. Blending modes, opacity & fill, creating modifying text.",
-            ],
-            img: "./assets/images/photoshop-course-500x500.png",
-            imgPos: "right",
-            duration: "2 Months",
-        },
-        {
-            title: "Microsoft Office Basics",
-            descriptions: [
-                "Basic fundamental, MS Paint, Keyboard Keys, Microsoft Word, Microsoft Excel,   Microsoft Power Point, File Management, Desktop Editing, Shortcut Keys. Internet:- Searching information and images, Prepare file & Project,  Printout, Create & sending email etc.",
-            ],
-            img: "./assets/images/msoffice.jpg",
-            imgPos: "left",
-            duration: "2 Months",
-        },
-
-        {
-            title: "ADVANCE EXCEL & INTERNET",
-            descriptions: [
-                "Advance Internet:- Scanning documents, Railway Ticket booking, Govt. Jobs Online Form. Advance Excel:-      Vlookup, H lookup , Consolidate, Data Filter, Chart/Graph, Pivot Table,  Conditional Formatting. Salary Slip, Data Entry , Company Work.",
-            ],
-            img: "./assets/images/EXCEL.JPEG",
-            imgPos: "right",
-            duration: "10 Days",
-        },
-        {
-            title: "COMPUTER REPARING",
-            descriptions: [
-                "Basic Information of Computer Parts:- Motherboard, RAM, CPU, Hard Disk, SMPS etc. Computer Assembling, Booting process and System setup, Create partition and formatting the partition, windows installation(Windows XP, Windows 7, Windows 8, Windows 10), Software Installation (System software and Application software), Desktop editing and File Management, Manage Computer Console, Administrative Rights , User creation and setting, Password Policy, Disk partition from Manage Console, Antivirus installation, Printer installation (inkjet & LaserJet)",
-            ],
-            img: "./assets/images/COMPUTER-REPARING.jpg",
-            imgPos: "left",
-            duration: "2 Months",
-        },
+        }
     ]
     return (
         <div className='mb-5 pb-5'>
-            <Jumbotron title='Our Services' />
+            <Jumbotron title='Other Services' />
             <Breadcrumb currentPage='Services' />
             <div className="site-section">
                 <div className="container">
                     <div className="row mb-5 justify-content-center text-center">
                         <div className="col-lg-6 mt-5">
                             <h2 className="section-title-underline mb-3">
-                                <span>Our Services</span>
+                                <span>Other Services</span>
                             </h2>
                         </div>
                     </div>
                     <div className="row">
-                        {services.slice(0,6)
-                            .map((course, i) => (
-                                <CourseCard key={i} course={course} />
-                            ))}
+                        {services.map((course, i) => (
+                            <CourseCard key={i} course={course} />
+                        ))}
                     </div>
                 </div>
             </div>

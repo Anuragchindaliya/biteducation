@@ -19,10 +19,11 @@ import { ADCA, DCA, BCC, CCC, Tally, DCTT } from "./components/courses";
 import { courses } from "./pages/api/courses";
 import InterLinking from "./components/common/InterLinking";
 import OurServices from "./pages/ourServices";
+import AutoCad from "./components/courses/AutoCad";
 function App() {
   return (
     <>
-      <BrowserRouter basename="bitcomputer">
+      <BrowserRouter>
         <Header />
         <Switch>
           <Route exact path="/">
@@ -75,6 +76,9 @@ function App() {
           </Route>
           <Route path="/dctt">
             <DCTT />
+          </Route>
+          <Route path="/autocad">
+            <AutoCad />
           </Route>
         </Switch>
         <Footer />

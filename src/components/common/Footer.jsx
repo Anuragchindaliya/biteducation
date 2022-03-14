@@ -24,17 +24,15 @@ const Footer = () => {
                     <div className="col-lg-3">
                         <h3 className="footer-heading"><span>Our Courses</span></h3>
                         <ul className="list-unstyled">
-                            {courses.filter((course) => course.url).map((course, i) => (<li key={i}><Link to={course.url}>{course.title}</Link></li>))}
+                            {courses.map((course, i) => (<li key={i}> {course.url ? <Link to={course.url && ""}>{course.title}</Link> : <span> {course.title}</span>}</li>))}
                         </ul>
                     </div>
                     <div className="col-lg-3">
                         <h3 className="footer-heading"><span>Contact</span></h3>
                         <ul className="list-unstyled">
-                            <li><a href="#/">Help Center</a></li>
-                            <li><a href="#/">Support Community</a></li>
-                            <li><a href="#/">Press</a></li>
-                            <li><a href="#/">Share Your Story</a></li>
-                            <li><a href="#/">Our Supporters</a></li>
+                            <li><strong className='font-weight-bold'>Address:</strong> Shop No. 17/18, Nain chowk, Nangla Road, Jawahar colony NIT Faridabad, Haryana 121005</li>
+                            <li><strong className='font-weight-bold'>Email:</strong> bitcomputer007@gmail.com</li>
+                            <li><strong className='font-weight-bold'>Contact No.:</strong> 8287166159, 9315523546</li>
                         </ul>
                     </div>
                 </div>

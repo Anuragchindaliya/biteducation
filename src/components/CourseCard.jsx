@@ -13,10 +13,10 @@ const CourseCard = ({ course }) => {
                         layout='responsive'
                     />
                     {/* <div className="price">{course.duration}</div> */}
-                    <div className="category"><h3>{course.title}</h3></div>
+                    <div className="category text-center"><h3>{course.title}</h3></div>
                 </figure>
                 <div className="course-1-content pb-4">
-                    <p className="desc mb-4">{course.descriptions[0].slice(0, 180)}...</p>
+                    <p className="desc mb-4 font-weight-bold">{course.descriptions[0].slice(0, 180)}</p>
                     {course.url && <p>   <Link className="btn btn-primary rounded-0 px-4 text-white" to={course.url}>Read More</Link></p>}
                 </div>
             </div>

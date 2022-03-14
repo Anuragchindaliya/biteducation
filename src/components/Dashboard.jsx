@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Button, Modal } from 'react-bootstrap';
-
+import weburl from '../config';
 const Dashboard = ({ toast }) => {
 
     const [state, setState] = useState({ sr_no: "", name: "", father_name: "", adm_no: "", cert_file: [] })
@@ -24,7 +24,7 @@ const Dashboard = ({ toast }) => {
             formData.append("adm_no", state.adm_no);
             formData.append("cert_path", state.cert_file);
             formData.append("token", localStorage.getItem("token"));
-            fetch("http://web2rise.q2w.in:100/bitapi/api/upload-certificate", { method: "POST", body: formData })
+            fetch(`${weburl}/api/upload-certificate`, { method: "POST", body: formData })
                 .then((res) => res.json())
                 .then((result) => {
                     if (result.status === "success") {
@@ -72,7 +72,7 @@ const Dashboard = ({ toast }) => {
         editFormData.append("token", localStorage.getItem("token"));
         editFormData.append("created_at", new Date().toISOString().slice(0, 19).replace('T', ' '));
 
-        fetch("http://web2rise.q2w.in:100/bitapi/api/update-certificate", { method: "POST", body: editFormData })
+        fetch(`${weburl}/api/update-certificate`, { method: "POST", body: editFormData })
             .then((res) => res.json())
             .then((result) => {
                 if (result.status === "success") {
@@ -93,7 +93,7 @@ const Dashboard = ({ toast }) => {
     }
     const handleDelete = () => {
         const token = localStorage.getItem("token");
-        fetch(`http://web2rise.q2w.in:100/bitapi/api/delete?id=${deleteData.id}&token=${token}`).then((res) => res.json()).then((result) => {
+        fetch(`${weburl}/api/delete?id=${deleteData.id}&token=${token}`).then((res) => res.json()).then((result) => {
             if (result.status === "success") {
                 toast.success("Deleted Successfully")
             } else {

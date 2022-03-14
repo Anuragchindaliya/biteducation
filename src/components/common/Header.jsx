@@ -1,7 +1,9 @@
 import { Link, useLocation } from 'react-router-dom'
 import React, { useEffect } from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaUsers } from "react-icons/fa";
-import { BsQuestionCircle, BsTelephoneFill, BsEnvelope, BsLockFill, BsFillFileEarmarkArrowDownFill } from "react-icons/bs";
+import { FaFacebookF, FaTwitter, } from "react-icons/fa";
+import { RiWhatsappFill } from "react-icons/ri";
+import { AiOutlineMail } from "react-icons/ai";
+import { BsQuestionCircle, BsTelephoneFill, BsLockFill, BsFillFileEarmarkArrowDownFill } from "react-icons/bs";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Nav from './Nav';
 import { menus } from '../../pages/api/menus';
@@ -45,11 +47,13 @@ const Header = () => {
               <Link to="/contact" className="small mr-3 text-white">
                 <span className=" mr-2"><BsQuestionCircle /></span> Have a questions?
               </Link>
-              <a href="tel:+91-8287166159" className="small ml-3 text-white">
-                <span><BsTelephoneFill /></span> 8287166159
+              <a href="tel:+91-8287166159" className="small ml-3 text-white font-weight-bold">
+                <span><BsTelephoneFill /></span> 8287166159,
               </a>
-              <a href="mailto:bitcomputer007@gmail.com" className="small ml-3 text-white ">
-                <span className="mr-2"><BsEnvelope /></span> bitcomputer007@gmail.com
+              <a href="tel:+91-9315523546" className="small ml-3 text-white font-weight-bold"> 9315523546
+              </a>
+              <a href="mailto:bitcomputer007@gmail.com" className="small ml-3 text-white font-weight-bold">
+                <span className="mr-2"><AiOutlineMail /></span> bitcomputer007@gmail.com
               </a>
             </div>
             <div className="col-lg-4 text-right ">
@@ -80,7 +84,7 @@ const Header = () => {
               <div className="social-wrap">
                 <a href="#/"><span><FaFacebookF /></span> </a>
                 <a href="#/"><span ><FaTwitter /></span></a>
-                <a href="#/"><span><FaLinkedinIn /></span> </a>
+                <a href="https://wa.me/+91-8287166159" target="_blank" rel="noreferrer"><span><RiWhatsappFill /></span> </a>
                 <i onClick={handleMenu} className="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black">
                   <span><AiOutlineMenu /></span>
                 </i>

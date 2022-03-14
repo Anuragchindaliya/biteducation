@@ -19,7 +19,7 @@ const About = () => {
         {
             title: "Why Academics Works",
             descriptions: ["BIT Computer Education and Services is a leading Skills and Talent Development Institute that is building a manpower pool for global industry requirements. The institute was set up in 2007 to help the industry overcome its human resource challenges."],
-            img: "./assets/images/course_4.jpg",
+            img: "./assets/images/teacher.jpeg",
             imgPos: "right"
         },
         {
@@ -41,7 +41,7 @@ const About = () => {
         <>
             <Jumbotron title='About Us' />
             <Breadcrumb currentPage='About' />
-            <div className="container pt-5 mb-5">
+            <div className="container pt-5 my-2">
                 <div className="row">
                     <div className="col-lg-4">
                         <h2 className="section-title-underline">
@@ -57,7 +57,7 @@ const About = () => {
                         </span>
                         <h3 className='text-primary'>Mission</h3>
                         <p>
-                        Our mission is to provide a safe and supportive learning environment with opportunities for each student to develop the technical skills &amp; knowledge to become a social, responsible and successful citizen of India
+                            Our mission is to provide a safe and supportive learning environment with opportunities for each student to develop the technical skills &amp; knowledge to become a social, responsible and successful citizen of India
                         </p>
                     </div>
                     <div className="col-lg-4 col-md-6 mb-5 mb-lg-0">
@@ -66,7 +66,7 @@ const About = () => {
                         </span>
                         <h3 className='text-primary'>Vision</h3>
                         <p>
-                        Creation of Human Resource pool with spectrum of technical competencies, while ensuring universal access to serve as an instrument of bringing about technological transformation.
+                            Creation of Human Resource pool with spectrum of technical competencies, while ensuring universal access to serve as an instrument of bringing about technological transformation.
                         </p>
                     </div>
                     <div className="col-lg-4 col-md-6 mb-5 mb-lg-0">

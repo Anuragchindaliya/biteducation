@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
+import weburl from '../config'
 
 const LoginForm = ({ setUserLogin, toast }) => {
     const [crendetials, setCrendentials] = useState({ username: "", password: "" })
     const handleSubmit = (e) => {
         e.preventDefault();
         const formData = new FormData();
-
         formData.append("username", crendetials.username);
         formData.append("password", crendetials.password);
 
-        fetch("http://web2rise.q2w.in:100/bitapi/api/login", { method: "POST", body: formData })
+        fetch(`${weburl}/api/login`, { method: "POST", body: formData })
             .then((res) => res.json())
             .then((result) => {
                 if (result.status === "success") {
@@ -37,11 +37,11 @@ const LoginForm = ({ setUserLogin, toast }) => {
                     <div className="row">
                         <div className="col-md-12 form-group">
                             <label htmlFor="username">Username</label>
-                            <input type="text"  className="form-control form-control-lg" value={crendetials.username} onChange={(e) => setCrendentials({ ...crendetials, username: e.target.value })} />
+                            <input type="text" className="form-control form-control-lg" value={crendetials.username} onChange={(e) => setCrendentials({ ...crendetials, username: e.target.value })} />
                         </div>
                         <div className="col-md-12 form-group">
                             <label htmlFor="pword">Password</label>
-                            <input type="password"className="form-control form-control-lg" value={crendetials.password} onChange={(e) => setCrendentials({ ...crendetials, password: e.target.value })} />
+                            <input type="password" className="form-control form-control-lg" value={crendetials.password} onChange={(e) => setCrendentials({ ...crendetials, password: e.target.value })} />
                         </div>
                     </div>
                     <div className="row">

@@ -5,12 +5,13 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Dashboard from '../components/Dashboard'
 import LoginForm from '../components/LoginForm'
+import weburl from '../config';
 
 const Login = () => {
     const isValidToken = () => {
         if (localStorage.getItem("token")) {
             const token = localStorage.getItem("token")
-            fetch(`http://web2rise.q2w.in:100/bitapi/api/validate-token?token=${token}`)
+            fetch(`${weburl}/api/validate-token?token=${token}`)
                 .then((res) => res.json())
                 .then((result) => {
                     if (result.status === "success") {
@@ -30,7 +31,7 @@ const Login = () => {
         const formData = new FormData();
         formData.append("token", localStorage.getItem("token"));
         formData.append("id", localStorage.getItem("id"));
-        fetch("http://web2rise.q2w.in:100/bitapi/api/logout", { method: "POST", body: formData })
+        fetch(`${weburl}/api/logout`, { method: "POST", body: formData })
             .then((res) => res.json())
             .then((result) => {
                 if (result.status === "success") {
