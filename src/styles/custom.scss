@@ -58,3 +58,6 @@ $primary: #580707;
 .rotate-180 {
   transform: rotate(180deg);
 }
+.Toastify__toast-container {
+  z-index: 999;
+}

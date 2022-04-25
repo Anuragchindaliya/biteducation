@@ -23,7 +23,7 @@ const BannerSliders = () => {
         "assets/banner/banner-2.jpg",
     ]
     return (
-        <div className='site-section mt-5 mt-sm-5'>
+        <div className='site-section'>
             <Carousel {...settings}>
                 {images.map((img, idx) => (<Carousel.Item key={idx}>
                     <img

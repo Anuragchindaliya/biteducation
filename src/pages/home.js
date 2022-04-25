@@ -3,15 +3,13 @@ import Banner from "../components/Banner";
 import CourseCard from "../components/CourseCard";
 import { VscMortarBoard, VscWorkspaceTrusted } from "react-icons/vsc";
 import { BiLaptop } from "react-icons/bi";
-import Services from "../components/common/Services";
 import Cta from "../components/common/Cta";
 import BannerSliders from "../components/BannerSliders";
-import Testimonials from "../components/Testimonials";
 import { courses } from "./api/courses";
 
 export default function Home() {
   return (
-    <div className="">
+    <>
       <BannerSliders />
       <Banner />
       {/* feature */}
@@ -86,9 +84,9 @@ export default function Home() {
             </div>
             <div className="col-lg-8">
               <p className="lead">
-                BIT Computer Education & services has been established with a
-                primary objective to enhance the skills of the youth of India at
-                Affordable Fee to meet the growing demands of modern
+                BIT Computer Education &amp; services has been established with
+                a primary objective to enhance the skills of the youth of India
+                at Affordable Fee to meet the growing demands of modern
                 industrialization.
               </p>
               <p className="lead">
@@ -137,153 +135,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* our Philosphy */}
-      {/* <Services /> */}
       <Cta />
-      {/* <Testimonials /> */}
-      {/* news updates */}
-      {/* <div className="news-updates">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-9">
-              <div className="section-heading">
-                <h2 className="text-black">News &amp; Updates</h2>
-                <a href="#/">Read All News</a>
-              </div>
-              <div className="row">
-                <div className="col-lg-6">
-                  <div className="post-entry-big">
-                    <a href="news-single.html" className="img-link">
-                      <img
-                        src="./assets/images/blog_large_1.jpg"
-                        alt="blog3"
-                        className="img-fluid"
-                      />
-                    </a>
-                    <div className="post-content">
-                      <div className="post-meta">
-                        <a href="#/">June 6, 2019</a>
-                        <span className="mx-1">/</span>
-                        <a href="#/">Admission</a>, <a href="#/">Updates</a>
-                      </div>
-                      <h3 className="post-heading">
-                        <a href="news-single.html">
-                          Campus Camping and Learning Session
-                        </a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="post-entry-big horizontal d-flex mb-4">
-                    <a href="news-single.html" className="img-link mr-4">
-                      <img
-                        src="./assets/images/blog_1.jpg"
-                        alt="blog1"
-                        className="img-fluid"
-                      />
-                    </a>
-                    <div className="post-content">
-                      <div className="post-meta">
-                        <a href="#/">June 6, 2019</a>
-                        <span className="mx-1">/</span>
-                        <a href="#/">Admission</a>, <a href="#/">Updates</a>
-                      </div>
-                      <h3 className="post-heading">
-                        <a href="news-single.html">
-                          Campus Camping and Learning Session
-                        </a>
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="post-entry-big horizontal d-flex mb-4">
-                    <a href="news-single.html" className="img-link mr-4">
-                      <img
-                        src="./assets/images/blog_2.jpg"
-                        alt="blop4"
-                        className="img-fluid"
-                      />
-                    </a>
-                    <div className="post-content">
-                      <div className="post-meta">
-                        <a href="#/">June 6, 2019</a>
-                        <span className="mx-1">/</span>
-                        <a href="#/">Admission</a>, <a href="#/">Updates</a>
-                      </div>
-                      <h3 className="post-heading">
-                        <a href="news-single.html">
-                          Campus Camping and Learning Session
-                        </a>
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="post-entry-big horizontal d-flex mb-4">
-                    <a href="news-single.html" className="img-link mr-4">
-                      <img
-                        src="./assets/images/blog_1.jpg"
-                        alt="blog5"
-                        className="img-fluid"
-                      />
-                    </a>
-                    <div className="post-content">
-                      <div className="post-meta">
-                        <a href="#/">June 6, 2019</a>
-                        <span className="mx-1">/</span>
-                        <a href="#/">Admission</a>, <a href="#/">Updates</a>
-                      </div>
-                      <h3 className="post-heading">
-                        <a href="news-single.html">
-                          Campus Camping and Learning Session
-                        </a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3">
-              <div className="section-heading">
-                <h2 className="text-black">Campus Videos</h2>
-                <a href="#/">View All Videos</a>
-              </div>
-              <a
-                href="https://vimeo.com/45830194"
-                className="video-1 mb-4"
-                data-fancybox
-                data-ratio={2}
-              >
-                <span className="play">
-                  <span>
-                    <FaPlay />
-                  </span>
-                </span>
-                <img
-                  src="./assets/images/course_5.jpg"
-                  alt="blog2"
-                  className="img-fluid"
-                />
-              </a>
-              <a
-                href="https://vimeo.com/45830194"
-                className="video-1 mb-4"
-                data-fancybox
-                data-ratio={2}
-              >
-                <span className="play">
-                  <span>
-                    <FaPlay />
-                  </span>
-                </span>
-                <img
-                  src="./assets/images/course_5.jpg"
-                  alt="blog3"
-                  className="img-fluid"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div> */}
-    </div>
+    </>
   );
 }

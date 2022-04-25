@@ -12,9 +12,8 @@
 }
 .site-navbar {
   margin-bottom: 0px;
-  z-index: 1999;
-  position: absolute;
   width: 100%;
+  z-index: 9;
 
   .container-fluid {
     padding-left: 7rem;
@@ -129,7 +128,9 @@
             }
 
             &.has-children {
+              
               > a {
+               
                 &:before {
                   content: "\e315";
                   right: 20px;
@@ -137,6 +138,7 @@
               }
               > .dropdown,
               > ul {
+               
                 left: 100%;
                 top: 0;
               }

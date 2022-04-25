@@ -65,7 +65,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <header className="site-navbar py-4 js-sticky-header site-navbar-target sticky-wrapper" role="banner">
+      <header className="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
         <div className="container">
           <div className="d-flex align-items-center">
             <div className="site-logo">
