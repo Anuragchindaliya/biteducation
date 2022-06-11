@@ -43,7 +43,8 @@ const Dashboard = ({ toast }) => {
     }
     const fetchCertificate = () => {
         const token = localStorage.getItem("token");
-        fetch(`http://web2rise.q2w.in:100/bitapi/api/certificates?token=${token}`).then((res) => res.json()).then((result) => {
+        // fetch(`http://web2rise.q2w.in:100/bitapi/api/certificates?token=${token}`).then((res) => res.json()).then((result) => {
+        fetch(`${weburl}/api/certificates?token=${token}`).then((res) => res.json()).then((result) => {
 
             if (result.status === "success") {
                 setCertificates(result.data)
@@ -160,7 +161,8 @@ const Dashboard = ({ toast }) => {
                                     <td>{crt.father_name}</td>
                                     <td>{crt.sr_no}</td>
                                     <td>{crt.adm_no}</td>
-                                    <td><a target="_blank" download="BitEducation-certificate" href={"http://localhost/bitapi/uploads/certificates/" + crt.cert_path} rel="noreferrer">Download</a></td>
+                                    <td><a target="_blank" download="BitEducation-certificate"
+                                        href={weburl + "/uploads/certificates/" + crt.cert_path} rel="noreferrer">Download</a></td>
                                     {/* <td>
                                         <button className='btn btn-primary mr-2' onClick={() => handleEditModal(crt)}>Edit</button>
                                         <button className='btn btn-primary' onClick={() => handleDeleteModal(crt.id)}>Delete</button>
